@@ -1,0 +1,677 @@
+{
+  "id": "111859",
+  "subscribed": true,
+  "course": "INTERDISCIPLINAR EM CIÊNCIA E TECNOLOGIA - NOTURNO",
+  "login": {
+    "password": "1005roger",
+    "username": "maria.moreno"
+  },
+  "subscriptions": {
+    "TÓPICOS EM CIÊNCIA E TECNOLOGIA II": [
+      {
+        "INÍCIO": "19:00",
+        "CÓDIGO": "6079",
+        "TÉRMINO": "21:00",
+        "UC": "TÓPICOS EM CIÊNCIA E TECNOLOGIA II",
+        "TURNO": "N",
+        "DIA": "Sexta"
+      }
+    ],
+    "CIRCUITOS DIGITAIS": [
+      {
+        "INÍCIO": "15:30",
+        "CÓDIGO": "3518",
+        "TÉRMINO": "17:30",
+        "UC": "CIRCUITOS DIGITAIS",
+        "TURNO": "I",
+        "DIA": "Terça"
+      },
+      {
+        "INÍCIO": "15:30",
+        "CÓDIGO": "3518",
+        "TÉRMINO": "17:30",
+        "UC": "CIRCUITOS DIGITAIS",
+        "TURNO": "I",
+        "DIA": "Quinta"
+      }
+    ],
+    "SISTEMAS OPERACIONAIS": [
+      {
+        "INÍCIO": "13:30",
+        "CÓDIGO": "2612",
+        "TÉRMINO": "15:30",
+        "UC": "SISTEMAS OPERACIONAIS",
+        "TURNO": "I",
+        "DIA": "Terça"
+      },
+      {
+        "INÍCIO": "13:30",
+        "CÓDIGO": "2612",
+        "TÉRMINO": "15:30",
+        "UC": "SISTEMAS OPERACIONAIS",
+        "TURNO": "I",
+        "DIA": "Quinta"
+      }
+    ],
+    "MODELAGEM COMPUTACIONAL": [
+      {
+        "INÍCIO": "",
+        "CÓDIGO": "4352",
+        "UC": "MODELAGEM COMPUTACIONAL",
+        "TÉRMINO": "",
+        "TURNO": "N",
+        "DIA": ""
+      }
+    ],
+    "PROBABILIDADE E ESTATÍSTICA": [
+      {
+        "INÍCIO": "19:00",
+        "CÓDIGO": "2609",
+        "TÉRMINO": "21:00",
+        "UC": "PROBABILIDADE E ESTATÍSTICA",
+        "TURNO": "N",
+        "DIA": "Quinta"
+      }
+    ],
+    "TECNOLOGIA E MEIO AMBIENTE": [
+      {
+        "INÍCIO": "10:00",
+        "CÓDIGO": "4537",
+        "TÉRMINO": "12:00",
+        "UC": "TECNOLOGIA E MEIO AMBIENTE",
+        "TURNO": "I",
+        "DIA": "Quinta"
+      }
+    ],
+    "FENÔMENOS ELETROMAGNÉTICOS EXPERIMENTAL": [
+      {
+        "INÍCIO": "",
+        "CÓDIGO": "5137",
+        "UC": "FENÔMENOS ELETROMAGNÉTICOS EXPERIMENTAL",
+        "TÉRMINO": "",
+        "TURNO": "N",
+        "DIA": ""
+      }
+    ],
+    "LABORATÓRIO DE CIRCUITOS ELÉTRICOS": [
+      {
+        "INÍCIO": "13:30",
+        "CÓDIGO": "6089",
+        "TÉRMINO": "15:30",
+        "UC": "LABORATÓRIO DE CIRCUITOS ELÉTRICOS",
+        "TURNO": "I",
+        "DIA": "Segunda"
+      }
+    ],
+    "CIRCUITOS ELÉTRICOS II": [
+      {
+        "INÍCIO": "15:30",
+        "CÓDIGO": "5903",
+        "TÉRMINO": "17:30",
+        "UC": "CIRCUITOS ELÉTRICOS II",
+        "TURNO": "I",
+        "DIA": "Segunda"
+      },
+      {
+        "INÍCIO": "15:30",
+        "CÓDIGO": "5903",
+        "TÉRMINO": "17:30",
+        "UC": "CIRCUITOS ELÉTRICOS II",
+        "TURNO": "I",
+        "DIA": "Quarta"
+      }
+    ],
+    "BIOÉTICA E BIOSSEGURANÇA": [
+      {
+        "INÍCIO": "10:00",
+        "CÓDIGO": "5384",
+        "TÉRMINO": "12:00",
+        "UC": "BIOÉTICA E BIOSSEGURANÇA",
+        "TURNO": "I",
+        "DIA": "Terça"
+      }
+    ],
+    "ALGORITMOS E ESTRUTURAS DE DADOS II": [
+      {
+        "INÍCIO": "19:00",
+        "CÓDIGO": "2833",
+        "TÉRMINO": "21:00",
+        "UC": "ALGORITMOS E ESTRUTURAS DE DADOS II",
+        "TURNO": "N",
+        "DIA": "Terça"
+      },
+      {
+        "INÍCIO": "21:00",
+        "CÓDIGO": "2833",
+        "TÉRMINO": "23:00",
+        "UC": "ALGORITMOS E ESTRUTURAS DE DADOS II",
+        "TURNO": "N",
+        "DIA": "Quinta"
+      }
+    ]
+  },
+  "history": {
+    "ucs": [
+      {
+        "Código - Unidade Curricular": "2672 - CIÊNCIA, TECNOLOGIA E SOCIEDADE",
+        "Faltas": "3",
+        "Turno": "N",
+        "Ano Letivo": "2016",
+        "Situação": "APROVADO",
+        "Série / Termo": "1",
+        "Créd.": " ",
+        "Conceito": "7,5",
+        "Freq.%": "92",
+        "Grupo": "UNIDADE CURRICULAR FIXA",
+        "Sem": "1",
+        "Carga Horária": "36"
+      },
+      {
+        "Código - Unidade Curricular": "5702 - CÁLCULO EM UMA VARIÁVEL",
+        "Faltas": "2",
+        "Turno": "N",
+        "Ano Letivo": "2016",
+        "Situação": "APROVADO",
+        "Série / Termo": "1",
+        "Créd.": " ",
+        "Conceito": "6,1",
+        "Freq.%": "98",
+        "Grupo": "UNIDADE CURRICULAR FIXA",
+        "Sem": "1",
+        "Carga Horária": "108"
+      },
+      {
+        "Código - Unidade Curricular": "5703 - FUNDAMENTOS DE BIOLOGIA MODERNA",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2016",
+        "Situação": "APROVADO",
+        "Série / Termo": "1",
+        "Créd.": " ",
+        "Conceito": "7,5",
+        "Freq.%": "100",
+        "Grupo": "UNIDADE CURRICULAR FIXA",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "2649 - LÓGICA DE PROGRAMAÇÃO",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2016",
+        "Situação": "REPROVADO",
+        "Série / Termo": "1",
+        "Créd.": " ",
+        "Conceito": "1,5",
+        "Freq.%": "100",
+        "Grupo": "UNIDADE CURRICULAR FIXA",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "5704 - QUÍMICA GERAL",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2016",
+        "Situação": "REPROVADO",
+        "Série / Termo": "1",
+        "Créd.": " ",
+        "Conceito": "1,8",
+        "Freq.%": "100",
+        "Grupo": "UNIDADE CURRICULAR FIXA",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "5124 - ANATOMIA",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2016",
+        "Situação": "APROVADO",
+        "Série / Termo": "2",
+        "Créd.": " ",
+        "Conceito": "8,3",
+        "Freq.%": "100",
+        "Grupo": "",
+        "Sem": "2",
+        "Carga Horária": "36"
+      },
+      {
+        "Código - Unidade Curricular": "5870 - CIÊNCIA, TECNOLOGIA, SOCIEDADE E AMBIENTE",
+        "Faltas": "2",
+        "Turno": "I",
+        "Ano Letivo": "2016",
+        "Situação": "APROVADO",
+        "Série / Termo": "2",
+        "Créd.": " ",
+        "Conceito": "8",
+        "Freq.%": "94",
+        "Grupo": "",
+        "Sem": "2",
+        "Carga Horária": "36"
+      },
+      {
+        "Código - Unidade Curricular": "5900 - DESENHO TÉCNICO BÁSICO",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2016",
+        "Situação": "APROVADO",
+        "Série / Termo": "2",
+        "Créd.": " ",
+        "Conceito": "9,1",
+        "Freq.%": "100",
+        "Grupo": "",
+        "Sem": "2",
+        "Carga Horária": "36"
+      },
+      {
+        "Código - Unidade Curricular": "4374 - METODOLOGIA DA PESQUISA E COMUNICAÇÃO CIENTÍFICA",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2016",
+        "Situação": "APROVADO",
+        "Série / Termo": "2",
+        "Créd.": " ",
+        "Conceito": "6,5",
+        "Freq.%": "100",
+        "Grupo": "",
+        "Sem": "2",
+        "Carga Horária": "36"
+      },
+      {
+        "Código - Unidade Curricular": "4369 - FENÔMENOS MECÂNICOS",
+        "Faltas": "4",
+        "Turno": "N",
+        "Ano Letivo": "2016",
+        "Situação": "APROVADO",
+        "Série / Termo": "2",
+        "Créd.": " ",
+        "Conceito": "8",
+        "Freq.%": "94",
+        "Grupo": "UNIDADE CURRICULAR FIXA",
+        "Sem": "2",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "2650 - GEOMETRIA ANALÍTICA",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2016",
+        "Situação": "APROVADO",
+        "Série / Termo": "2",
+        "Créd.": " ",
+        "Conceito": "6",
+        "Freq.%": "100",
+        "Grupo": "UNIDADE CURRICULAR ELETIVA",
+        "Sem": "2",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "2649 - LÓGICA DE PROGRAMAÇÃO",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2016",
+        "Situação": "APROVADO",
+        "Série / Termo": "2",
+        "Créd.": " ",
+        "Conceito": "9",
+        "Freq.%": "100",
+        "Grupo": "UNIDADE CURRICULAR FIXA",
+        "Sem": "2",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "4328 - SÉRIES E EQUAÇÕES DIFERENCIAIS ORDINÁRIAS",
+        "Faltas": "6",
+        "Turno": "N",
+        "Ano Letivo": "2016",
+        "Situação": "REPROVADO",
+        "Série / Termo": "2",
+        "Créd.": " ",
+        "Conceito": "3,1",
+        "Freq.%": "92",
+        "Grupo": "UNIDADE CURRICULAR ELETIVA",
+        "Sem": "2",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "5359 - CÁLCULO EM VÁRIAS VARIÁVEIS",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2017",
+        "Situação": "APROVADO",
+        "Série / Termo": "3",
+        "Créd.": " ",
+        "Conceito": "6,3",
+        "Freq.%": "100",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "4348 - FENÔMENOS DO CONTÍNUO",
+        "Faltas": "8",
+        "Turno": "I",
+        "Ano Letivo": "2017",
+        "Situação": "REPROVADO",
+        "Série / Termo": "3",
+        "Créd.": " ",
+        "Conceito": "2,3",
+        "Freq.%": "89",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "4714 - INTRODUÇÃO À ECOLOGIA",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2017",
+        "Situação": "APROVADO",
+        "Série / Termo": "3",
+        "Créd.": " ",
+        "Conceito": "6,3",
+        "Freq.%": "100",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "2475 - ÁLGEBRA LINEAR",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2017",
+        "Situação": "REPROVADO",
+        "Série / Termo": "3",
+        "Créd.": " ",
+        "Conceito": "3,4",
+        "Freq.%": "100",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "4538 - FENÔMENOS MECÂNICOS EXPERIMENTAL",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2017",
+        "Situação": "APROVADO",
+        "Série / Termo": "3",
+        "Créd.": " ",
+        "Conceito": "8,4",
+        "Freq.%": "100",
+        "Grupo": "UNIDADE CURRICULAR ELETIVA",
+        "Sem": "1",
+        "Carga Horária": "36"
+      },
+      {
+        "Código - Unidade Curricular": "5356 - FISIOLOGIA HUMANA",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2017",
+        "Situação": "APROVADO",
+        "Série / Termo": "3",
+        "Créd.": " ",
+        "Conceito": "6,3",
+        "Freq.%": "100",
+        "Grupo": "UNIDADE CURRICULAR ELETIVA",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "5704 - QUÍMICA GERAL",
+        "Faltas": "5",
+        "Turno": "N",
+        "Ano Letivo": "2017",
+        "Situação": "REPROVADO",
+        "Série / Termo": "3",
+        "Créd.": " ",
+        "Conceito": "3,5",
+        "Freq.%": "93",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "5902 - CIRCUITOS ELÉTRICOS I",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2017",
+        "Situação": "APROVADO",
+        "Série / Termo": "4",
+        "Créd.": " ",
+        "Conceito": "6,1",
+        "Freq.%": "100",
+        "Grupo": "",
+        "Sem": "2",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "4748 - FENÔMENOS ELETROMAGNÉTICOS",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2017",
+        "Situação": "APROVADO",
+        "Série / Termo": "4",
+        "Créd.": " ",
+        "Conceito": "6",
+        "Freq.%": "100",
+        "Grupo": "",
+        "Sem": "2",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "2832 - ALGORITMOS E ESTRUTURAS DE DADOS I",
+        "Faltas": "4",
+        "Turno": "N",
+        "Ano Letivo": "2017",
+        "Situação": "APROVADO",
+        "Série / Termo": "4",
+        "Créd.": " ",
+        "Conceito": "8,5",
+        "Freq.%": "94",
+        "Grupo": "",
+        "Sem": "2",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "4770 - MECÂNICA GERAL",
+        "Faltas": "18",
+        "Turno": "N",
+        "Ano Letivo": "2017",
+        "Situação": "REPROVADO",
+        "Série / Termo": "4",
+        "Créd.": " ",
+        "Conceito": "0,3",
+        "Freq.%": "75",
+        "Grupo": "UNIDADE CURRICULAR ELETIVA",
+        "Sem": "2",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "5704 - QUÍMICA GERAL",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2017",
+        "Situação": "APROVADO",
+        "Série / Termo": "4",
+        "Créd.": " ",
+        "Conceito": "6,1",
+        "Freq.%": "100",
+        "Grupo": "",
+        "Sem": "2",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "4328 - SÉRIES E EQUAÇÕES DIFERENCIAIS ORDINÁRIAS",
+        "Faltas": "12",
+        "Turno": "N",
+        "Ano Letivo": "2017",
+        "Situação": "REPROVADO",
+        "Série / Termo": "4",
+        "Créd.": " ",
+        "Conceito": "4,9",
+        "Freq.%": "83",
+        "Grupo": "",
+        "Sem": "2",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "5384 - BIOÉTICA E BIOSSEGURANÇA",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2018",
+        "Situação": "EM CURSO",
+        "Série / Termo": "5",
+        "Créd.": " ",
+        "Conceito": "",
+        "Freq.%": "100",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "36"
+      },
+      {
+        "Código - Unidade Curricular": "3518 - CIRCUITOS DIGITAIS",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2018",
+        "Situação": "EM CURSO",
+        "Série / Termo": "5",
+        "Créd.": " ",
+        "Conceito": "",
+        "Freq.%": " ",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "5903 - CIRCUITOS ELÉTRICOS II",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2018",
+        "Situação": "EM CURSO",
+        "Série / Termo": "5",
+        "Créd.": " ",
+        "Conceito": "",
+        "Freq.%": " ",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "6089 - LABORATÓRIO DE CIRCUITOS ELÉTRICOS",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2018",
+        "Situação": "EM CURSO",
+        "Série / Termo": "5",
+        "Créd.": " ",
+        "Conceito": "",
+        "Freq.%": " ",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "36"
+      },
+      {
+        "Código - Unidade Curricular": "2612 - SISTEMAS OPERACIONAIS",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2018",
+        "Situação": "EM CURSO",
+        "Série / Termo": "5",
+        "Créd.": " ",
+        "Conceito": "",
+        "Freq.%": " ",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "4537 - TECNOLOGIA E MEIO AMBIENTE",
+        "Faltas": "0",
+        "Turno": "I",
+        "Ano Letivo": "2018",
+        "Situação": "EM CURSO",
+        "Série / Termo": "5",
+        "Créd.": " ",
+        "Conceito": "",
+        "Freq.%": " ",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "36"
+      },
+      {
+        "Código - Unidade Curricular": "2833 - ALGORITMOS E ESTRUTURAS DE DADOS II",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2018",
+        "Situação": "EM CURSO",
+        "Série / Termo": "5",
+        "Créd.": " ",
+        "Conceito": "",
+        "Freq.%": " ",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "5137 - FENÔMENOS ELETROMAGNÉTICOS EXPERIMENTAL",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2018",
+        "Situação": "EM CURSO",
+        "Série / Termo": "5",
+        "Créd.": " ",
+        "Conceito": "",
+        "Freq.%": " ",
+        "Grupo": "UNIDADE CURRICULAR ELETIVA",
+        "Sem": "1",
+        "Carga Horária": "36"
+      },
+      {
+        "Código - Unidade Curricular": "4352 - MODELAGEM COMPUTACIONAL",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2018",
+        "Situação": "EM CURSO",
+        "Série / Termo": "5",
+        "Créd.": " ",
+        "Conceito": "",
+        "Freq.%": " ",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "36"
+      },
+      {
+        "Código - Unidade Curricular": "2609 - PROBABILIDADE E ESTATÍSTICA",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2018",
+        "Situação": "EM CURSO",
+        "Série / Termo": "5",
+        "Créd.": " ",
+        "Conceito": "",
+        "Freq.%": " ",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "72"
+      },
+      {
+        "Código - Unidade Curricular": "6079 - TÓPICOS EM CIÊNCIA E TECNOLOGIA II",
+        "Faltas": "0",
+        "Turno": "N",
+        "Ano Letivo": "2018",
+        "Situação": "EM CURSO",
+        "Série / Termo": "5",
+        "Créd.": " ",
+        "Conceito": "",
+        "Freq.%": " ",
+        "Grupo": "",
+        "Sem": "1",
+        "Carga Horária": "36"
+      }
+    ]
+  },
+  "fullname": "MARIA LUISA SANTOS MORENO SANCHES",
+  "last_update": "2018-05-02 21:41:39"
+}
