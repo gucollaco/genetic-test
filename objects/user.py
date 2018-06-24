@@ -33,7 +33,10 @@ class User:
         self.subscriptions = {}
         self.preferences = []
 
+        self.indexes = {}
+
         self._simulated_term = None
+        self._simulated_history = None
 
         self.graduation_map = None
 
@@ -90,6 +93,7 @@ class User:
         self.last_update = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
 
         if save: self.save()
+        self.prepare_indexes()
 
     '''UNIDADES CURRICULARES'''
     def fetch_history(self, chrome):
@@ -240,24 +244,16 @@ class User:
 
         self._history['objects'] = objs
 
+        self.prepare_indexes()
+
     def calc_total_credits(self):
-        return sum([m['object'].credit for m in self._history['objects'] if m['status'] == 'APROVADO'])
+        return sum(self.indexes['APROVADO'])
 
     def has_requisites(self, uc):
-        if isinstance(uc, str):
-            rs = [r.id for r in Materia.find(uc).requisites]
-        elif isinstance(uc, Materia):
-            rs = [r.id for r in uc.requisites]
-        elif isinstance(uc, Aula):
-            rs = [r.id for r in uc.materia.requisites]
-        else:
-            return NotImplemented
-
-        ids = [obj['object'].id for obj in self._history['objects'] if obj['status'] == 'APROVADO']
-        return all(r in ids for r in rs)
+        return all(r.id in self.indexes['APROVADO'] for r in uc.requisites)
 
     def get_current_term(self):
-        return max([int(uc['term']) for uc in self._history['objects'] if uc['status'] != "EM CURSO"]) + 1
+        return self.indexes['CURRENT_TERM']
 
     def get_preferences(self, path='preferences.json'):
         pref = file.load(path)
@@ -267,20 +263,32 @@ class User:
     def simulate_term(self, term):
         self._simulated_term = term
 
+        simulated_history = {}
+
+        if 'ucs' in self._history:
+            simulated_history['ucs'] = [uc for uc in self._history['ucs'] if
+                                        int(uc['Série / Termo']) <= self._simulated_term]
+
+        if 'objects' in self._history:
+            simulated_history['objects'] = [obj for obj in self._history['objects'] if
+                                            int(obj['term']) <= self._simulated_term]
+
+        self._simulated_history = simulated_history
+        self.prepare_indexes()
+
+    def prepare_indexes(self):
+        aprovados = [obj['object'].id for obj in self.history['objects'] if obj['status'] == 'APROVADO']
+        self.indexes['APROVADO'] = aprovados
+
+        term = max([int(uc['term']) for uc in self.history['objects'] if uc['status'] != "EM CURSO"]) + 1
+        self.indexes['CURRENT_TERM'] = term
+
     @property
     def history(self):
         if self._simulated_term is None:
             return self._history
 
-        simulated_history = {}
-
-        if 'ucs' in self._history:
-            simulated_history['ucs'] = [uc for uc in self._history['ucs'] if int(uc['Série / Termo']) <= self._simulated_term]
-
-        if 'objects' in self._history:
-            simulated_history['objects'] = [obj for obj in self._history['objects'] if int(obj['term']) <= self._simulated_term]
-
-        return simulated_history
+        return self._simulated_history
 
 
     '''GRADE'''

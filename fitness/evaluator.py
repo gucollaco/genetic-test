@@ -1,9 +1,10 @@
 class Evaluator:
-    def __init__(self):
+    def __init__(self, extra=None):
         super().__init__()
 
         self.scores = []
         self.descriptions = []
+        self.extra = extra
 
     def __repr__(self):
         return str(self.evaluate())

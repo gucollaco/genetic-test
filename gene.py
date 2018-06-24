@@ -1,5 +1,6 @@
 import random
 
+from auxiliar.timing import timing, timing_close, timing_open
 from fitness.condition_map import Conditions
 from fitness.evaluator import Evaluator
 
@@ -22,7 +23,7 @@ class Gene:
         self._evaluator = None
 
         if random:
-            self.mutate(populate=True)
+            self.mutate(populate=False)
 
     def __repr__(self):
         if self.data is None:
@@ -41,7 +42,7 @@ class Gene:
 
     @staticmethod
     def __fit__(data, gene_type, cromossome):
-        e = Evaluator()
+        e = Evaluator(gene_type)
         student = Gene.ref_database.student
 
         if data is None:  # CONDICAO <QUANTIDADE DE JANELAS ENTRE AULAS>
@@ -130,6 +131,9 @@ class Gene:
 
         return self._evaluator
 
+    def reset_evaluator(self):
+        self._evaluator = None
+
     def isEmpty(self):
         return self.data is None
 
@@ -149,12 +153,11 @@ class Gene:
         pool = [None] * int(len(known) * empty_proportion)
         pool += known
 
-        self.data = random.sample(pool, 1)[0]
-        self._evaluator = None
-        self.cromossome.individual.recalculate = True
+        self.set_data(random.sample(pool, 1)[0])
 
-    def clone(self):
-        g = Gene(None, self.gene_type)
+    def clone(self, cromossome):
+        g = Gene(cromossome, self.gene_type)
         g.data = self.data
+        g._evaluator = None
 
         return g

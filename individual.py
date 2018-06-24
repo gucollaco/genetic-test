@@ -1,6 +1,7 @@
 from cromossome import CROMOSSOME_KEYS, Cromossome, NUMBER_OF_GENES
 import random
 import uuid
+from auxiliar.timing import timing
 
 from gene import Gene
 
@@ -34,6 +35,7 @@ class Individual:
 
         self._fitness = None
         self._dna = None
+        self._evaluators = None
         self.recalculate = True
         self.origin = generation
 
@@ -118,7 +120,14 @@ class Individual:
         for weekday in CROMOSSOME_KEYS:
             self.cromossomes[weekday] = Cromossome(self, weekday, random=True)
 
-    def fitness(self, normalized=1):
+    def fitness(self, normalized=1, force=False):
+        if force:
+            for c in self.cromossomes.values():
+                for g in c.genes:
+                    g.reset_evaluator()
+
+            self.recalculate = True
+
         if self.recalculate:
             self.calculate()
 
@@ -131,8 +140,15 @@ class Individual:
 
         return self._dna
 
+    def evaluators(self):
+        if self.recalculate:
+            self.calculate()
+
+        return self._evaluators
+
     def calculate(self):
         fitness = 0
+        evals = []
         genes = []
         for c in self.cromossomes.values():
             for g in c.genes:
@@ -142,9 +158,11 @@ class Individual:
 
                 genes.append(gene)
                 fitness += g.fitness
+                evals.append(g.evaluator)
 
         self._dna = ','.join(genes)
         self._fitness = fitness
+        self._evaluators = evals
         self.recalculate = False
 
     def mutate(self):
@@ -160,16 +178,20 @@ class Individual:
 
         tip = random.sample(range(NUMBER_OF_GENES), 1)[0]
         for k in CROMOSSOME_KEYS:
-            profase = self.cromossomes[k].crossover(other.cromossomes[k], tip=tip)
-            profase[0].individual = child
-            profase[1].individual = child2
+            profase = self.cromossomes[k].crossover((child, child2), other.cromossomes[k], tip=tip)
 
             child.cromossomes[k] = profase[0]
             child2.cromossomes[k] = profase[1]
 
+        child.fitness(force=True)
+        child2.fitness(force=True)
+
         if optimization is not None:
             optimization(child)
             optimization(child2)
+
+        child.fitness(force=True)
+        child2.fitness(force=True)
 
         # media = (self.fitness() + other.fitness())/2
         # if child.fitness() < media:
@@ -199,3 +221,17 @@ class Individual:
                     idx[aula.materia.id][aula.id].append(g.gene_type)
 
         return idx
+
+    def clone(self, *args):
+        i = Individual(generation=self.origin)
+
+        for k, c in self.cromossomes.items():
+            for j in range(NUMBER_OF_GENES):
+                i.cromossomes[k].genes[j] = c.genes[j].clone(cromossome=i.cromossomes[k])
+
+        for data, gene_type in args:
+            i.cromossomes[gene_type[0]].genes[gene_type[1]].set_data(data)
+
+        return i
+
+

@@ -2,21 +2,21 @@ WORKLOAD_TO_CREDIT = {'36h': 1, '72h': 2, '108h': 3}
 
 
 class Materia(object):
-    _ref_database = None
+    ref_database = None
 
     @staticmethod
     def ref_database(ref):
-        Materia._ref_database = ref
+        Materia.ref_database = ref
 
     @staticmethod
     def find(obj, minimum=None, limit=None, detail=False, fast=False):
         from auxiliar.word import ratio
 
         if not fast:
-            result = [[m, max([ratio(a, obj) for a in m.alternativos])] for m in Materia._ref_database.materias.values()]
+            result = [[m, max([ratio(a, obj) for a in m.alternativos])] for m in Materia.ref_database.materias.values()]
         else:
             result = []
-            for m in Materia._ref_database.materias.values():
+            for m in Materia.ref_database.materias.values():
                 r = [m, max([ratio(a, obj) for a in m.alternativos])]
                 result += [r]
                 if r[1] == 100:  # correspondencia exata

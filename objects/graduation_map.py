@@ -1,3 +1,4 @@
+from auxiliar.timing import timing
 from objects.aula import Aula
 from objects.materia import Materia
 
@@ -8,6 +9,7 @@ class GraduationMap(list):
 
         self.name = name
         self.index = {}
+        self.dependencies = {}
 
         self.specials = {}
 
@@ -58,6 +60,8 @@ class GraduationMap(list):
 
         self.sort(key=lambda x: self.get_term(x))
 
+        self.index_dependencies(catalog)
+
     def get_term(self, uc):
         id = ''
         if isinstance(uc, (Materia, Aula)):
@@ -74,18 +78,28 @@ class GraduationMap(list):
         else:
             return -1
 
-    def get_dependencies(self, item, height=-1):
+    # todo generate dependencies index
+    def get_dependencies(self, item, height=-1, force=False):
+        if height != -1 or force:
+            e = item
 
-        e = item
+            dependencies = []
+            for i in self:
+                if e in i.requisites:
+                    dependencies.append(i)
+                    if height != 1:
+                        dependencies += self.get_dependencies(i, height-1)
 
-        dependencies = []
-        for i in self:
-            if e in i.requisites:
-                dependencies.append(i)
-                if height != 1:
-                    dependencies += self.get_dependencies(i, height-1)
+            return dependencies
+        else:
+            return self.dependencies[item.id]
 
-        return dependencies
+    def index_dependencies(self, catalog):
+        deps = {}
+        for m in catalog.ref_database.materias.values():
+            deps[m.id] = self.get_dependencies(m, force=True)
+
+        self.dependencies = deps
 
     @staticmethod
     def excel(path='mapa_graduacao.xlsx') -> dict():

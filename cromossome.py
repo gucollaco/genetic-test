@@ -46,23 +46,23 @@ class Cromossome:
         for i in range(NUMBER_OF_GENES):
             self.genes[i] = Gene(self, gene_type=(self.weekday, i), random=True)
 
-    # todo Melhorar crossingover
-    def crossover(self, other, tip):
-        c = Cromossome(None, self.weekday)
-        c2 = Cromossome(None, self.weekday)
+    # todo Escolher: tip igual pra todos os cromossomos ou diferente pra cada um
+    def crossover(self, children, other, tip):
+        c = Cromossome(children[0], self.weekday)
+        c2 = Cromossome(children[1], self.weekday)
 
         for i in range(tip+1):
-            c.genes[i] = self.genes[i].clone()
+            c.genes[i] = self.genes[i].clone(c)
             c.genes[i].cromossome = c
 
-            c2.genes[i] = other.genes[i].clone()
+            c2.genes[i] = other.genes[i].clone(c2)
             c2.genes[i].cromossome = c2
 
         for i in range(tip+1, NUMBER_OF_GENES):
-            c.genes[i] = other.genes[i].clone()
+            c.genes[i] = other.genes[i].clone(c)
             c.genes[i].cromossome = c
 
-            c2.genes[i] = self.genes[i].clone()
+            c2.genes[i] = self.genes[i].clone(c2)
             c2.genes[i].cromossome = c2
 
         return c, c2
