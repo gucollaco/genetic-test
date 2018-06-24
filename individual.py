@@ -1,6 +1,8 @@
+from cromossome import CROMOSSOME_KEYS, Cromossome, NUMBER_OF_GENES
 import random
+import uuid
 
-from cromossome import CROMOSSOME_KEYS, Cromossome
+from gene import Gene
 
 GENOTYPE = 1
 PHENOTYPE = 2
@@ -19,20 +21,38 @@ class Individual:
     def ref_database(ref):
         Cromossome.ref_database(ref)
 
-    def __init__(self, random=False, genes=None):
+    def __init__(self, random=False, generation=None, genes=None):
         super().__init__()
 
+        self.hash = uuid.uuid1().hex
+
         self.cromossomes = dict()
-        self.chance_of_mutating = 0.1
+        for weekday in CROMOSSOME_KEYS:
+            self.cromossomes[weekday] = Cromossome(self, weekday)
+
+        self.chance_of_mutating = 0.3
+
+        self._fitness = None
+        self._dna = None
+        self.recalculate = True
+        self.origin = generation
+
+        if genes is not None:
+            for g in genes:
+                aula = Gene.ref_database.aulas[g]
+                self.add_gene(aula)
 
         if random:
             self.randomize()
 
     def __repr__(self):
         try:
-            return str(self.fitness())
+            return '{} (#{})'.format(self.fitness(), self.origin)
         except:
             return 'Unknown'
+
+    def __eq__(self, other):
+        return self.dna == other.dna
 
     def __expression__(self):
         from texttable import Texttable
@@ -73,11 +93,11 @@ class Individual:
 
             resumed_col_2 = col[1]
             if i >= 1:
-                if resumed_col_2 == data[i-1][1]:
+                if resumed_col_2 == data[i - 1][1]:
                     resumed_col_2 = ''
                 else:
-                    if len([c[0] for c in data if data[i-1][1] == c[1]]) > 1:
-                        tablething.append([sum([c[0] for c in data if data[i-1][1] == c[1]]), '', '', '', ''])
+                    if len([c[0] for c in data if data[i - 1][1] == c[1]]) > 1:
+                        tablething.append([sum([c[0] for c in data if data[i - 1][1] == c[1]]), '', '', '', ''])
 
             tablething.append([col[0], resumed_col_2, col[4], col[2], col[3]])
 
@@ -86,15 +106,46 @@ class Individual:
         b.set_cols_width([10, 65, 30, 40, 20])
         return b.draw()
 
+    def __hash__(self):
+        return hash(self.dna)
+
+    def add_gene(self, data):
+        for h in data.horarios:
+            self.cromossomes[h[0]].genes[h[1]].set_data(data)
+
     # randomiza inteiramente todos os cromossomos de um individuo
     def randomize(self):
         for weekday in CROMOSSOME_KEYS:
             self.cromossomes[weekday] = Cromossome(self, weekday, random=True)
 
     def fitness(self, normalized=1):
-        total = sum([g.fitness for c in self.cromossomes.values() for g in c.genes])
+        if self.recalculate:
+            self.calculate()
 
-        return total/normalized
+        return self._fitness / normalized
+
+    @property
+    def dna(self):
+        if self.recalculate:
+            self.calculate()
+
+        return self._dna
+
+    def calculate(self):
+        fitness = 0
+        genes = []
+        for c in self.cromossomes.values():
+            for g in c.genes:
+                gene = '-1'
+                if g.data is not None:
+                    gene = str(g.data.id)
+
+                genes.append(gene)
+                fitness += g.fitness
+
+        self._dna = ','.join(genes)
+        self._fitness = fitness
+        self.recalculate = False
 
     def mutate(self):
         for cromossome in self.cromossomes.values():
@@ -103,18 +154,31 @@ class Individual:
                     gene.mutate()
 
     # todo Melhorar mating
-    def mate(self, other, optimization=None):
-        child = Individual()
+    def mate(self, other, optimization=None, generation=None):
+        child = Individual(generation=generation)
+        child2 = Individual(generation=generation)
 
+        tip = random.sample(range(NUMBER_OF_GENES), 1)[0]
         for k in CROMOSSOME_KEYS:
-            profase = self.cromossomes[k].crossover(other.cromossomes[k])
-            profase.individual = child
-            child.cromossomes[k] = profase
+            profase = self.cromossomes[k].crossover(other.cromossomes[k], tip=tip)
+            profase[0].individual = child
+            profase[1].individual = child2
+
+            child.cromossomes[k] = profase[0]
+            child2.cromossomes[k] = profase[1]
 
         if optimization is not None:
-            child = optimization(child)
+            optimization(child)
+            optimization(child2)
 
-        return child
+        # media = (self.fitness() + other.fitness())/2
+        # if child.fitness() < media:
+        #     print('   BAD SON | {:.3f} {:.3f}'.format(child.fitness(), media))
+        #
+        # if child2.fitness() <= media:
+        #     print('   BAD SON | {:.3f} {:.3f}'.format(child2.fitness(), media))
+
+        return child, child2
 
     @property
     def index(self):
@@ -135,4 +199,3 @@ class Individual:
                     idx[aula.materia.id][aula.id].append(g.gene_type)
 
         return idx
-

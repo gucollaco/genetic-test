@@ -23,9 +23,9 @@ class Bridge:
     def kill(self):
         self.connection.kill()
 
-    def sync(self, user, password, curso):
+    def sync(self, user, password, curso, force=False):
         self.fetch()
-        self.intranet(user, password)
+        self.intranet(user, password, force)
 
         Materia.ref_database(self)
         Professor.ref_database(self)
@@ -81,13 +81,13 @@ class Bridge:
             obj.ref_professores(self.professores)
             self.aulas[obj.id] = obj
 
-    def intranet(self, user, password):
-        self.student = User(user, password, subscribed=True, load=True, save=True)
+    def intranet(self, user, password, force):
+        self.student = User(user, password, subscribed=True, load=not force, save=True)
 
 
 if __name__ == "__main__":
     db = Bridge()
 
-    db.sync('dsalexandre', 'HelenOfTroy1', 'ECOMP')
+    db.sync('dsalexandre', 'HelenOfTroy1', 'ECOMP', force=True)
 
     print(db)

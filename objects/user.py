@@ -29,8 +29,11 @@ class User:
         self.id = ''
         self.last_update = ''
 
-        self.history = {}
+        self._history = {}
         self.subscriptions = {}
+        self.preferences = []
+
+        self._simulated_term = None
 
         self.graduation_map = None
 
@@ -49,8 +52,9 @@ class User:
         data['fullname'] = self.fullname
         data['course'] = self.course
         data['id'] = self.id
-        data['history'] = self.history
+        data['history'] = self._history
         data['subscriptions'] = self.subscriptions
+        data['preferences'] = self.preferences
         data['last_update'] = self.last_update
 
         return data
@@ -61,8 +65,9 @@ class User:
         yield ('fullname', self.fullname)
         yield ('course', self.course)
         yield ('id', self.id)
-        yield ('history', self.history)
+        yield ('history', self._history)
         yield ('subscriptions', self.subscriptions)
+        yield ('preferences', self.preferences)
         yield ('last_update', self.last_update)
 
     def update(self, save=False):
@@ -79,6 +84,9 @@ class User:
             self.fetch_subscriptions(chrome)
 
         chrome.quit()
+
+        self.get_preferences()
+
         self.last_update = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
 
         if save: self.save()
@@ -89,7 +97,7 @@ class User:
         chrome.execute_script('mostraTopico(8);')
         chrome.execute_script("mostraAplicativo('887');")
 
-        self.history['ucs'] = []
+        self._history['ucs'] = []
         # todo Refinar esse sleep, tem q ser dinâmico
         time.sleep(10)
         chrome.get(INTRANET_HISTORICO)
@@ -141,24 +149,24 @@ class User:
 
                     uc[k] = v
 
-                self.history['ucs'].append(uc)
+                self._history['ucs'].append(uc)
 
     def ucs(self, status=None, model="MINIMALIST"):
         if status is None:
             status = ['APROVADO', 'REPROVADO', 'EM_CURSO']
 
         if model == "MINIMALIST":
-            return [u['Código - Unidade Curricular'].split(' - ')[1] for u in self.history['ucs'] if u['Situação'] in status]
+            return [u['Código - Unidade Curricular'].split(' - ')[1] for u in self._history['ucs'] if u['Situação'] in status]
         elif model == "COMPLEX":
             return [[u['Código - Unidade Curricular'].split(' - ')[0],
                      u['Código - Unidade Curricular'].split(' - ')[1],
                      u['Turno'],
-                     u['Carga Horária']] for u in self.history['ucs'] if u['Situação'] in status]
+                     u['Carga Horária']] for u in self._history['ucs'] if u['Situação'] in status]
         elif model == "SIMPLE":
             return [[
                         u['Código - Unidade Curricular'].split(' - ')[1],
                         u['Turno']
-                    ] for u in self.history['ucs'] if u['Situação'] in status]
+                    ] for u in self._history['ucs'] if u['Situação'] in status]
 
     def past_ucs(self, model="MINIMALIST"):
         return self.ucs(status=['APROVADO', 'REPROVADO'], model=model)
@@ -174,7 +182,7 @@ class User:
 
         objs = []
 
-        for uc in self.history['ucs']:
+        for uc in self._history['ucs']:
             code = uc['Código - Unidade Curricular'][:uc['Código - Unidade Curricular'].find(' - ')]
             name = uc['Código - Unidade Curricular'][uc['Código - Unidade Curricular'].find(' - ')+3:]
 
@@ -230,10 +238,10 @@ class User:
 
             objs.append(obj)
 
-        self.history['objects'] = objs
+        self._history['objects'] = objs
 
     def calc_total_credits(self):
-        return sum([m['object'].credit for m in self.history['objects'] if m['status'] == 'APROVADO'])
+        return sum([m['object'].credit for m in self._history['objects'] if m['status'] == 'APROVADO'])
 
     def has_requisites(self, uc):
         if isinstance(uc, str):
@@ -245,11 +253,35 @@ class User:
         else:
             return NotImplemented
 
-        ids = [obj['object'].id for obj in self.history['objects'] if obj['status'] == 'APROVADO']
+        ids = [obj['object'].id for obj in self._history['objects'] if obj['status'] == 'APROVADO']
         return all(r in ids for r in rs)
 
     def get_current_term(self):
-        return max([int(uc['term']) for uc in self.history['objects'] if uc['status'] != "EM CURSO"]) + 1
+        return max([int(uc['term']) for uc in self._history['objects'] if uc['status'] != "EM CURSO"]) + 1
+
+    def get_preferences(self, path='preferences.json'):
+        pref = file.load(path)
+
+        self.preferences = pref
+
+    def simulate_term(self, term):
+        self._simulated_term = term
+
+    @property
+    def history(self):
+        if self._simulated_term is None:
+            return self._history
+
+        simulated_history = {}
+
+        if 'ucs' in self._history:
+            simulated_history['ucs'] = [uc for uc in self._history['ucs'] if int(uc['Série / Termo']) <= self._simulated_term]
+
+        if 'objects' in self._history:
+            simulated_history['objects'] = [obj for obj in self._history['objects'] if int(obj['term']) <= self._simulated_term]
+
+        return simulated_history
+
 
     '''GRADE'''
     def fetch_subscriptions(self, chrome):
@@ -390,7 +422,7 @@ class User:
             uc.set_summary(catalogo.find(k))
             ucs.append(uc)
 
-        self.history['grid'] = ucs
+        self._history['grid'] = ucs
 
     def sync_agenda(self, agenda):
         from september.matrix.lecture_time import LectureTime
@@ -401,10 +433,10 @@ class User:
         term = self.get_current_term()
 
         sync_fails = []
-        stack_ucs = [i for i in range(len(self.history['grid']))]
+        stack_ucs = [i for i in range(len(self._history['grid']))]
 
         for index_uc in stack_ucs:
-            uc = self.history['grid'][index_uc]
+            uc = self._history['grid'][index_uc]
             aftermath = index_uc in sync_fails
 
             possibilities = [{'booking': b, 'tags': [[t[-1], uc.summary.compareName(t[-1])] for t in b.tags], 'shifts': [[t[-1], fuzz.ratio(t[-1].upper(), 'TURMA ' + uc.shift)] for t in b.tags]} for b in agenda.reservations]
@@ -468,10 +500,10 @@ class User:
                             booking_time = BookingTime.parse(time)
                             time.room = booking.rooms[booking_time]
 
-            self.history['agenda'] = history_agenda
+            self._history['agenda'] = history_agenda
 
     def is_time_avaliable(self, time):
-        for b in self.history['agenda'].values():
+        for b in self._history['agenda'].values():
             for bt in b.bookings:
                 if bt[0] == time:
                     return False
@@ -512,8 +544,9 @@ class User:
         self.fullname = data['fullname']
         self.course = data['course']
         self.id = data['id']
-        self.history = data['history']
+        self._history = data['history']
         self.subscriptions = data['subscriptions']
+        self.preferences = data['preferences']
         self.last_update = data['last_update']
 
         return True

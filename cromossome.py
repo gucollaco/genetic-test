@@ -18,7 +18,6 @@ class Cromossome:
         self.individual = individual
         self.weekday = day
         self.genes = []
-
         for i in range(NUMBER_OF_GENES):
             self.genes.append(Gene(self, gene_type=(self.weekday, i), random=False))
 
@@ -35,30 +34,51 @@ class Cromossome:
 
         return ", ".join(s)
 
+    def __eq__(self, other):
+        for g, o in zip(self.genes, other.genes):
+            if g != o:
+                return False
+
+        return True
+
     # randomiza inteiramente um cromossomo
     def randomize(self):
         for i in range(NUMBER_OF_GENES):
             self.genes[i] = Gene(self, gene_type=(self.weekday, i), random=True)
 
     # todo Melhorar crossingover
-    def crossover(self, other):
-        tip = random.sample(range(NUMBER_OF_GENES), 1)[0]
+    def crossover(self, other, tip):
         c = Cromossome(None, self.weekday)
+        c2 = Cromossome(None, self.weekday)
+
         for i in range(tip+1):
             c.genes[i] = self.genes[i].clone()
             c.genes[i].cromossome = c
+
+            c2.genes[i] = other.genes[i].clone()
+            c2.genes[i].cromossome = c2
 
         for i in range(tip+1, NUMBER_OF_GENES):
             c.genes[i] = other.genes[i].clone()
             c.genes[i].cromossome = c
 
-        return c
+            c2.genes[i] = self.genes[i].clone()
+            c2.genes[i].cromossome = c2
+
+        return c, c2
 
     def gap_size(self, gene_index):
         pre_gap = 0
+        student = Gene.ref_database.student
+
         for k in reversed(range(gene_index)):
             if self.genes[k].isEmpty():
                 pre_gap += 1
+
+                gene_type = self.genes[k].gene_type
+                if student.preferences[gene_type[1]][gene_type[0]] == '0':  # se o aluno preferir o horario vazio nao penaliza
+                    pre_gap -= 1
+
             else:
                 break
 
@@ -66,6 +86,10 @@ class Cromossome:
         for k in range(gene_index + 1, NUMBER_OF_GENES):
             if self.genes[k].isEmpty():
                 pos_gap += 1
+
+                gene_type = self.genes[k].gene_type
+                if student.preferences[gene_type[1]][gene_type[0]] == '0':  # se o aluno preferir o horario vazio nao penaliza
+                    pre_gap -= 1
             else:
                 break
 

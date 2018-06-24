@@ -1,3 +1,5 @@
+import itertools
+
 from individual import Individual
 import random
 
@@ -62,24 +64,24 @@ class Population(object):
         mom, dad = None, None
 
         sum_fitness = sum([i.fitness() for i in self.items])
-        wheel = [[i.fitness(sum_fitness), i] for i in self.ordered]
+        wheel = list(self.ordered)
 
         chance_of_picking = random.uniform(0, 1)
         acumulated_fitness = 0.0
-        for fitness, i in wheel:
-            acumulated_fitness += fitness
+        for i in wheel:
+            acumulated_fitness += i.fitness(sum_fitness)
 
             if chance_of_picking <= acumulated_fitness:
                 mom = i
                 break
 
-        sum_fitness = sum([i.fitness() for i in self.items if i != mom])
-        wheel = [[i.fitness(sum_fitness), i] for i in self.ordered if i != mom]
+        wheel.remove(mom)
+        sum_fitness -= mom.fitness()
 
         chance_of_picking = random.uniform(0, 1)
         acumulated_fitness = 0.0
-        for fitness, i in wheel:
-            acumulated_fitness += fitness
+        for i in wheel:
+            acumulated_fitness += i.fitness(sum_fitness)
 
             if chance_of_picking <= acumulated_fitness:
                 dad = i
@@ -94,23 +96,18 @@ class Population(object):
         # for each mating
         for _ in range(int(self.size * self.chance_of_breading)):
             parent, other_parent = self.pick()
-            offspring.append(parent.mate(other_parent, optimization))
+            offspring += parent.mate(other_parent, optimization, generation=self.generation)
 
         return offspring
 
     def select(self):
         removals = self.size - self.initial_size
 
-        worse = sorted([[i, individual] for i, individual in enumerate(self.items)], key=lambda x: x[1].fitness())[:25]
-        worse.sort(key=lambda x: x[0], reverse=True)
-        self.offspring_rejection_ratio = len([w for w in worse if w[0] >= self.initial_size])/removals
+        worse = sorted(self.items, key=lambda x: x.fitness())[:removals]
+        self.offspring_rejection_ratio = len([w for w in worse if w.origin >= self.generation])/removals
 
-        for i, individual in worse:
-            del self.items[i]
-            removals -= 1
-
-            if removals <= 0:
-                break
+        for individual in worse:
+            self.items.remove(individual)
 
     def best(self):
         return self.ordered[0]
@@ -118,7 +115,11 @@ class Population(object):
     def analyse(self):
         import numpy
 
-        fts = [i.fitness() for i in self.items]
-        print('#{} GEN'.format(self.generation), end=' | ')
-        print('max: {:.3f}  min: {:.3f}  avg: {:.3f}'.format(max(fts), min(fts), numpy.mean(fts)))
-        # print(sorted(fts))
+        if self.generation % 1 == 0:
+            print('#{} GEN'.format(self.generation), end=' | ')
+            fts = [i.fitness() for i in self.items]
+            print('max: {:.3f}  min: {:.3f}  avg: {:.3f} var: {:.2f} rej: {:3f}'.format(max(fts), min(fts), numpy.mean(fts), self.variability() * 100, self.offspring_rejection_ratio))
+            # print(sorted(fts))
+
+    def variability(self) -> float:
+        return len(set(self.items))/len(self.items)
