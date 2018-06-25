@@ -1,6 +1,6 @@
 import itertools
 
-from individual import Individual
+from individual import Individual, MAX_LIFESPAN
 import random
 
 
@@ -18,7 +18,8 @@ class Population(object):
 
         self.chance_of_breading = breading
 
-        self.offspring_rejection_ratio = 0
+        self.offspring_rejection_ratio = 0.0
+        self.elders_rejection_ratio = 0.0
 
         self.generation = 1
 
@@ -101,11 +102,28 @@ class Population(object):
         return offspring
 
     def select(self):
-        removals = self.size - self.initial_size
+        elders = []
+        worse = []
+        maximum_rejection = self.size - self.initial_size
+        j = 0
+        for i in reversed(self.ordered):
+            i.timespan += 1
+            if i.timespan > MAX_LIFESPAN:
+                # elders.append(i)
+                continue
 
-        worse = sorted(self.items, key=lambda x: x.fitness())[:removals]
-        self.offspring_rejection_ratio = len([w for w in worse if w.origin >= self.generation])/removals
+            if j < maximum_rejection:
+                worse.append(i)
+                j += 1
 
+        removals = self.size - self.initial_size - len(elders)
+
+        worse = sorted(worse, key=lambda x: x.fitness())[:removals]
+
+        self.offspring_rejection_ratio = 0 if maximum_rejection == 0 else len([w for w in worse if w.origin >= self.generation])/maximum_rejection
+        self.elders_rejection_ratio = len(elders)/self.size
+
+        worse += elders
         for individual in worse:
             self.items.remove(individual)
 
@@ -118,8 +136,9 @@ class Population(object):
         if self.generation % 1 == 0:
             print('#{} GEN'.format(self.generation), end=' | ')
             fts = [i.fitness() for i in self.items]
-            print('max: {:.3f}  min: {:.3f}  avg: {:.3f} var: {:.2f} rej: {:3f}'.format(max(fts), min(fts), numpy.mean(fts), self.variability() * 100, self.offspring_rejection_ratio))
+            print('max: {:.3f}  min: {:.3f}  avg: {:.3f} var: {:.2f} rej: {:.3f} eld: {:.3f} pop: {}'.format(max(fts), min(fts), numpy.mean(fts), self.variability() * 100, self.offspring_rejection_ratio, self.elders_rejection_ratio, len(self)))
             # print(sorted(fts))
 
     def variability(self) -> float:
-        return len(set(self.items))/len(self.items)
+        uniques = set(self.items)
+        return len(uniques)/len(self.items)

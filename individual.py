@@ -8,6 +8,8 @@ from gene import Gene
 GENOTYPE = 1
 PHENOTYPE = 2
 
+MAX_LIFESPAN = 25
+
 
 def express(obj, type=PHENOTYPE):
     if type == PHENOTYPE:
@@ -31,13 +33,15 @@ class Individual:
         for weekday in CROMOSSOME_KEYS:
             self.cromossomes[weekday] = Cromossome(self, weekday)
 
-        self.chance_of_mutating = 0.3
+        self.chance_of_mutating = 0.85
 
         self._fitness = None
-        self._dna = None
+        self._genome = None
         self._evaluators = None
         self.recalculate = True
         self.origin = generation
+
+        self.timespan = 0
 
         if genes is not None:
             for g in genes:
@@ -49,12 +53,12 @@ class Individual:
 
     def __repr__(self):
         try:
-            return '{} (#{})'.format(self.fitness(), self.origin)
+            return '{} ({}) (#{})'.format(self.genome, self.fitness(), self.origin)
         except:
             return 'Unknown'
 
     def __eq__(self, other):
-        return self.dna == other.dna
+        return self.genome == other.genome
 
     def __expression__(self):
         from texttable import Texttable
@@ -109,7 +113,7 @@ class Individual:
         return b.draw()
 
     def __hash__(self):
-        return hash(self.dna)
+        return hash(self.genome)
 
     def add_gene(self, data):
         for h in data.horarios:
@@ -122,11 +126,7 @@ class Individual:
 
     def fitness(self, normalized=1, force=False):
         if force:
-            for c in self.cromossomes.values():
-                for g in c.genes:
-                    g.reset_evaluator()
-
-            self.recalculate = True
+            self.reset()
 
         if self.recalculate:
             self.calculate()
@@ -134,11 +134,11 @@ class Individual:
         return self._fitness / normalized
 
     @property
-    def dna(self):
+    def genome(self):
         if self.recalculate:
             self.calculate()
 
-        return self._dna
+        return self._genome
 
     def evaluators(self):
         if self.recalculate:
@@ -160,16 +160,26 @@ class Individual:
                 fitness += g.fitness
                 evals.append(g.evaluator)
 
-        self._dna = ','.join(genes)
+        self._genome = ','.join(genes)
         self._fitness = fitness
         self._evaluators = evals
         self.recalculate = False
+
+    def reset(self):
+        for c in self.cromossomes.values():
+            for g in c.genes:
+                g.reset_evaluator()
+
+        self.recalculate = True
 
     def mutate(self):
         for cromossome in self.cromossomes.values():
             for gene in cromossome.genes:
                 if random.uniform(0, 1) < self.chance_of_mutating:
-                    gene.mutate()
+                    gene.mutate(recalculate=False)
+
+        self.reset()
+        self.calculate()
 
     # todo Melhorar mating
     def mate(self, other, optimization=None, generation=None):
@@ -183,15 +193,9 @@ class Individual:
             child.cromossomes[k] = profase[0]
             child2.cromossomes[k] = profase[1]
 
-        child.fitness(force=True)
-        child2.fitness(force=True)
-
         if optimization is not None:
             optimization(child)
             optimization(child2)
-
-        child.fitness(force=True)
-        child2.fitness(force=True)
 
         # media = (self.fitness() + other.fitness())/2
         # if child.fitness() < media:
@@ -221,17 +225,4 @@ class Individual:
                     idx[aula.materia.id][aula.id].append(g.gene_type)
 
         return idx
-
-    def clone(self, *args):
-        i = Individual(generation=self.origin)
-
-        for k, c in self.cromossomes.items():
-            for j in range(NUMBER_OF_GENES):
-                i.cromossomes[k].genes[j] = c.genes[j].clone(cromossome=i.cromossomes[k])
-
-        for data, gene_type in args:
-            i.cromossomes[gene_type[0]].genes[gene_type[1]].set_data(data)
-
-        return i
-
 

@@ -5,6 +5,7 @@ from access.bridge import Bridge
 from auxiliar.timing import timing
 from fitness.condition_map import ConditionMap
 from gene import Gene
+from objects.memory import Memory
 from population import Population, mutate
 from individual import Individual, express, PHENOTYPE, GENOTYPE
 from auxiliar import file
@@ -13,13 +14,11 @@ from auxiliar.timing import timing_open, timing_close
 
 
 # VARIATION UNDER DOMESTICATION
-@timing
 def optimize(individual: Individual):
-    changes = []
-    t = None
     not_so_random = []
+    chance_of_tabu = 0.1
 
-    chance_of_tabu = 0.2
+    clone = Memory(individual)
     for c in individual.cromossomes.values():
         for g in c.genes:
             not_so_random.append(random.uniform(0, 1))
@@ -29,14 +28,18 @@ def optimize(individual: Individual):
                 maior_fitness = individual.fitness()
 
                 for s in neighborhood:
-                    bob = individual.clone((s, g.gene_type))
+                    clone.change((s, g.gene_type))
 
-                    if bob.fitness() > maior_fitness:
+                    if clone.fitness() > maior_fitness:
                         novo_s = (s, 1)
-                        maior_fitness = bob.fitness()
+                        maior_fitness = clone.fitness()
+                        clone.persist()
 
                 if len(novo_s) > 1:
+                    clone.revert()
                     g.set_data(novo_s[0])
+                else:
+                    clone.reset()
 
 
 # THE DESIGN OF NATURAL OBJECTS
@@ -84,7 +87,7 @@ print('INITIATE SIMULATION', end='\n   ')
 print(datetime.now())
 print('================================', end='\n\n')
 
-pop = populate(100)
+pop = populate(400)
 
 # express(pop[0])
 # express(pop[0], GENOTYPE)

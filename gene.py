@@ -112,10 +112,10 @@ class Gene:
 
         return e
 
-    def set_data(self, data):
+    def set_data(self, data, recalculate=True):
         self.data = data
         self._evaluator = None
-        self.cromossome.individual.recalculate = True
+        self.cromossome.individual.recalculate = recalculate
 
     @property
     def fitness(self):
@@ -143,7 +143,7 @@ class Gene:
             return [a for a in Gene.ref_database.aulas.values() if any(self.gene_type == h for h in a.horarios)]
 
     # todo Melhorar mutacao
-    def mutate(self, populate=False):
+    def mutate(self, populate=False, recalculate=True):
         empty_proportion = 0.33
         if populate:
             empty_proportion = 2.75
@@ -153,7 +153,7 @@ class Gene:
         pool = [None] * int(len(known) * empty_proportion)
         pool += known
 
-        self.set_data(random.sample(pool, 1)[0])
+        self.set_data(random.sample(pool, 1)[0], recalculate=recalculate)
 
     def clone(self, cromossome):
         g = Gene(cromossome, self.gene_type)

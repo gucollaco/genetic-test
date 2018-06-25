@@ -6,8 +6,10 @@ def timing(f):
         time1 = time.time()
         ret = f(*args)
         time2 = time.time()
-        print('                                                                                                       '
-              '              {} ms'.format((time2-time1)*1000.0))
+        t = (time2-time1)*1000.0
+        if t > 0:
+            print('                                                                                                   '
+                  '                  {} ms'.format(t))
         return ret
     return wrap
 
