@@ -1,0 +1,634 @@
+D:\dsalexan\Code\virtualenvs\thirtyfourenv\Scripts\python.exe D:/dsalexan/Universidade/IA/genetic-test/root.py
+
+================================
+PREPARING DATA...
+   2018-06-25 01:32:06.176532
+================================
+
+ERROR: Couldn't find summary for <Estágio Obrigatório>
+
+================================
+INITIATE SIMULATION
+   2018-06-25 01:32:11.682360
+================================
+
+#2 GEN | max: -313.053 min: -1722.053 avg: -1232.174 var: 100.00 rej: 0.004 anh: 0.000 pop: 1000
+#3 GEN | max: -193.321 min: -1483.464 avg: -1041.386 var: 100.00 rej: 0.008 anh: 0.000 pop: 1000
+#4 GEN | max: -144.392 min: -1280.196 avg: -889.452 var: 100.00 rej: 0.020 anh: 0.000 pop: 1000
+#5 GEN | max: -144.392 min: -1104.053 avg: -776.385 var: 100.00 rej: 0.072 anh: 0.000 pop: 1000
+#6 GEN | max: -144.392 min: -960.641 avg: -690.025 var: 100.00 rej: 0.104 anh: 0.000 pop: 1000
+#7 GEN | max: -144.392 min: -857.053 avg: -627.440 var: 100.00 rej: 0.200 anh: 0.000 pop: 1000
+#8 GEN | max: -144.392 min: -785.464 avg: -579.567 var: 100.00 rej: 0.308 anh: 0.000 pop: 1000
+#9 GEN | max: -144.392 min: -724.928 avg: -540.850 var: 100.00 rej: 0.320 anh: 0.000 pop: 1000
+#10 GEN | max: -125.660 min: -674.732 avg: -508.200 var: 100.00 rej: 0.384 anh: 0.000 pop: 1000
+#11 GEN | max: -68.928 min: -636.660 avg: -485.614 var: 100.00 rej: 0.484 anh: 0.000 pop: 1000
+#12 GEN | max: -68.928 min: -607.660 avg: -465.361 var: 100.00 rej: 0.504 anh: 0.000 pop: 1000
+#13 GEN | max: -68.928 min: -577.928 avg: -443.515 var: 100.00 rej: 0.480 anh: 0.000 pop: 1000
+#14 GEN | max: -68.928 min: -557.928 avg: -428.611 var: 100.00 rej: 0.584 anh: 0.000 pop: 1000
+#15 GEN | max: -68.928 min: -539.928 avg: -415.239 var: 100.00 rej: 0.604 anh: 0.000 pop: 1000
+#16 GEN | max: -22.464 min: -519.464 avg: -400.967 var: 100.00 rej: 0.604 anh: 0.000 pop: 1000
+#17 GEN | max: -22.464 min: -505.196 avg: -390.764 var: 100.00 rej: 0.676 anh: 0.000 pop: 1000
+#18 GEN | max: -22.464 min: -491.464 avg: -380.256 var: 100.00 rej: 0.680 anh: 0.000 pop: 1000
+#19 GEN | max: -22.464 min: -477.732 avg: -370.766 var: 100.00 rej: 0.688 anh: 0.000 pop: 1000
+#20 GEN | max: -22.464 min: -462.981 avg: -362.360 var: 100.00 rej: 0.668 anh: 0.000 pop: 1000
+#21 GEN | max: 53.536 min: -452.928 avg: -353.848 var: 100.00 rej: 0.676 anh: 0.000 pop: 1000
+#22 GEN | max: 53.536 min: -444.660 avg: -345.187 var: 100.00 rej: 0.700 anh: 0.000 pop: 1000
+#23 GEN | max: 75.608 min: -437.196 avg: -337.322 var: 100.00 rej: 0.708 anh: 0.000 pop: 1000
+#24 GEN | max: 75.608 min: -425.464 avg: -328.724 var: 100.00 rej: 0.744 anh: 0.000 pop: 1000
+#25 GEN | max: 75.608 min: -418.196 avg: -323.011 var: 100.00 rej: 0.788 anh: 0.000 pop: 1000
+#26 GEN | max: 75.608 min: -411.660 avg: -317.620 var: 100.00 rej: 0.784 anh: 0.000 pop: 1000
+#27 GEN | max: 75.608 min: -403.196 avg: -312.165 var: 100.00 rej: 0.748 anh: 0.000 pop: 1000
+#28 GEN | max: 75.608 min: -395.928 avg: -305.222 var: 100.00 rej: 0.732 anh: 0.000 pop: 1000
+#29 GEN | max: 75.608 min: -394.464 avg: -301.125 var: 100.00 rej: 0.788 anh: 0.000 pop: 1000
+#30 GEN | max: 75.608 min: -394.464 avg: -295.304 var: 100.00 rej: 0.764 anh: 0.000 pop: 1000
+#31 GEN | max: 75.608 min: -394.464 avg: -290.168 var: 100.00 rej: 0.788 anh: 0.000 pop: 1000
+#32 GEN | max: 75.608 min: -394.464 avg: -285.767 var: 100.00 rej: 0.808 anh: 0.000 pop: 1000
+#33 GEN | max: 75.608 min: -394.464 avg: -281.307 var: 100.00 rej: 0.852 anh: 0.000 pop: 1000
+#34 GEN | max: 75.608 min: -394.464 avg: -276.205 var: 100.00 rej: 0.804 anh: 0.000 pop: 1000
+#35 GEN | max: 75.608 min: -394.464 avg: -273.304 var: 100.00 rej: 0.860 anh: 0.000 pop: 1000
+#36 GEN | max: 75.608 min: -394.464 avg: -268.149 var: 100.00 rej: 0.784 anh: 0.000 pop: 1000
+#37 GEN | max: 75.608 min: -394.464 avg: -264.293 var: 100.00 rej: 0.832 anh: 0.000 pop: 1000
+#38 GEN | max: 75.608 min: -394.464 avg: -259.192 var: 100.00 rej: 0.800 anh: 0.000 pop: 1000
+#39 GEN | max: 75.608 min: -394.464 avg: -255.801 var: 100.00 rej: 0.852 anh: 0.000 pop: 1000
+#40 GEN | max: 75.608 min: -394.464 avg: -251.316 var: 100.00 rej: 0.820 anh: 0.000 pop: 1000
+#41 GEN | max: 75.608 min: -394.464 avg: -248.029 var: 100.00 rej: 0.852 anh: 0.000 pop: 1000
+#42 GEN | max: 75.608 min: -394.464 avg: -244.889 var: 100.00 rej: 0.848 anh: 0.000 pop: 1000
+#43 GEN | max: 75.608 min: -394.464 avg: -241.626 var: 100.00 rej: 0.848 anh: 0.000 pop: 1000
+#44 GEN | max: 75.608 min: -394.464 avg: -238.948 var: 100.00 rej: 0.856 anh: 0.000 pop: 1000
+#45 GEN | max: 75.608 min: -394.464 avg: -235.927 var: 100.00 rej: 0.856 anh: 0.000 pop: 1000
+#46 GEN | max: 75.608 min: -394.464 avg: -233.589 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#47 GEN | max: 75.608 min: -394.464 avg: -231.612 var: 100.00 rej: 0.884 anh: 0.000 pop: 1000
+#48 GEN | max: 75.608 min: -394.464 avg: -228.864 var: 100.00 rej: 0.892 anh: 0.000 pop: 1000
+#49 GEN | max: 75.608 min: -394.464 avg: -227.111 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#50 GEN | max: 75.608 min: -394.464 avg: -224.636 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#51 GEN | max: 75.608 min: -394.464 avg: -222.987 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#52 GEN | max: 75.608 min: -394.464 avg: -219.775 var: 100.00 rej: 0.872 anh: 0.000 pop: 1000
+#53 GEN | max: 75.608 min: -394.464 avg: -218.867 var: 100.00 rej: 0.940 anh: 0.000 pop: 1000
+#54 GEN | max: 75.608 min: -394.464 avg: -217.502 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#55 GEN | max: 75.608 min: -394.464 avg: -215.961 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#56 GEN | max: 75.608 min: -394.464 avg: -214.933 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#57 GEN | max: 75.608 min: -394.464 avg: -213.775 var: 100.00 rej: 0.900 anh: 0.000 pop: 1000
+#58 GEN | max: 75.608 min: -394.464 avg: -212.026 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#59 GEN | max: 75.608 min: -394.464 avg: -210.724 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#60 GEN | max: 75.608 min: -394.464 avg: -209.233 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#61 GEN | max: 75.608 min: -394.464 avg: -208.217 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#62 GEN | max: 75.608 min: -2958.196 avg: -622.503 var: 100.00 rej: 0.948 anh: 0.323 pop: 1000
+#63 GEN | max: 75.608 min: -1233.785 avg: -340.441 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#64 GEN | max: 75.608 min: -607.928 avg: -263.251 var: 100.00 rej: 0.372 anh: 0.000 pop: 1000
+#65 GEN | max: 75.608 min: -484.392 avg: -242.937 var: 100.00 rej: 0.576 anh: 0.000 pop: 1000
+#66 GEN | max: 75.608 min: -431.196 avg: -229.839 var: 100.00 rej: 0.644 anh: 0.000 pop: 1000
+#67 GEN | max: 75.608 min: -388.196 avg: -220.788 var: 100.00 rej: 0.720 anh: 0.000 pop: 1000
+#68 GEN | max: 75.608 min: -355.660 avg: -213.453 var: 100.00 rej: 0.752 anh: 0.000 pop: 1000
+#69 GEN | max: 75.608 min: -338.928 avg: -209.618 var: 100.00 rej: 0.820 anh: 0.000 pop: 1000
+#70 GEN | max: 75.608 min: -332.660 avg: -206.067 var: 100.00 rej: 0.832 anh: 0.000 pop: 1000
+#71 GEN | max: 75.608 min: -332.660 avg: -201.406 var: 100.00 rej: 0.832 anh: 0.000 pop: 1000
+#72 GEN | max: 75.608 min: -332.660 avg: -198.165 var: 100.00 rej: 0.840 anh: 0.000 pop: 1000
+#73 GEN | max: 75.608 min: -332.660 avg: -195.693 var: 100.00 rej: 0.896 anh: 0.000 pop: 1000
+#74 GEN | max: 75.608 min: -332.660 avg: -193.155 var: 100.00 rej: 0.896 anh: 0.000 pop: 1000
+#75 GEN | max: 75.608 min: -332.660 avg: -190.027 var: 100.00 rej: 0.880 anh: 0.000 pop: 1000
+#76 GEN | max: 75.608 min: -332.660 avg: -187.493 var: 100.00 rej: 0.888 anh: 0.000 pop: 1000
+#77 GEN | max: 75.608 min: -332.660 avg: -185.598 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#78 GEN | max: 75.608 min: -332.660 avg: -183.232 var: 100.00 rej: 0.872 anh: 0.000 pop: 1000
+#79 GEN | max: 75.608 min: -332.660 avg: -180.690 var: 100.00 rej: 0.892 anh: 0.000 pop: 1000
+#80 GEN | max: 75.608 min: -332.660 avg: -179.729 var: 100.00 rej: 0.944 anh: 0.000 pop: 1000
+#81 GEN | max: 75.608 min: -332.660 avg: -178.337 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#82 GEN | max: 75.608 min: -332.660 avg: -177.036 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#83 GEN | max: 75.608 min: -332.660 avg: -175.735 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#84 GEN | max: 75.608 min: -332.660 avg: -174.506 var: 100.00 rej: 0.944 anh: 0.000 pop: 1000
+#85 GEN | max: 75.608 min: -332.660 avg: -173.444 var: 100.00 rej: 0.940 anh: 0.000 pop: 1000
+#86 GEN | max: 75.608 min: -2662.928 avg: -605.184 var: 100.00 rej: 0.948 anh: 0.335 pop: 1000
+#87 GEN | max: 75.608 min: -1279.196 avg: -325.917 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#88 GEN | max: 75.608 min: -590.928 avg: -239.763 var: 100.00 rej: 0.332 anh: 0.000 pop: 1000
+#89 GEN | max: 75.608 min: -474.517 avg: -219.762 var: 100.00 rej: 0.556 anh: 0.000 pop: 1000
+#90 GEN | max: 75.608 min: -416.053 avg: -207.164 var: 100.00 rej: 0.668 anh: 0.000 pop: 1000
+#91 GEN | max: 75.608 min: -381.928 avg: -197.399 var: 100.00 rej: 0.720 anh: 0.000 pop: 1000
+#92 GEN | max: 75.608 min: -356.124 avg: -191.748 var: 100.00 rej: 0.764 anh: 0.000 pop: 1000
+#93 GEN | max: 75.608 min: -332.464 avg: -185.429 var: 100.00 rej: 0.764 anh: 0.000 pop: 1000
+#94 GEN | max: 75.608 min: -313.464 avg: -180.944 var: 100.00 rej: 0.840 anh: 0.000 pop: 1000
+#95 GEN | max: 75.608 min: -300.053 avg: -176.478 var: 100.00 rej: 0.800 anh: 0.000 pop: 1000
+#96 GEN | max: 75.608 min: -290.981 avg: -172.854 var: 100.00 rej: 0.836 anh: 0.000 pop: 1000
+#97 GEN | max: 75.608 min: -290.981 avg: -171.205 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#98 GEN | max: 75.608 min: -290.981 avg: -168.786 var: 100.00 rej: 0.884 anh: 0.000 pop: 1000
+#99 GEN | max: 75.608 min: -290.981 avg: -166.764 var: 100.00 rej: 0.892 anh: 0.000 pop: 1000
+#100 GEN | max: 75.608 min: -290.981 avg: -164.416 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#101 GEN | max: 75.608 min: -290.981 avg: -162.529 var: 100.00 rej: 0.880 anh: 0.000 pop: 1000
+#102 GEN | max: 75.608 min: -290.981 avg: -160.516 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#103 GEN | max: 75.608 min: -290.981 avg: -158.952 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#104 GEN | max: 75.608 min: -290.981 avg: -157.255 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#105 GEN | max: 75.608 min: -290.981 avg: -155.912 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#106 GEN | max: 75.608 min: -290.981 avg: -154.848 var: 100.00 rej: 0.948 anh: 0.000 pop: 1000
+#107 GEN | max: 75.608 min: -290.981 avg: -152.970 var: 100.00 rej: 0.900 anh: 0.000 pop: 1000
+#108 GEN | max: 75.608 min: -290.981 avg: -151.812 var: 100.00 rej: 0.928 anh: 0.000 pop: 1000
+#109 GEN | max: 75.608 min: -2842.464 avg: -574.233 var: 100.00 rej: 0.952 anh: 0.329 pop: 1000
+#110 GEN | max: 75.608 min: -1225.321 avg: -299.588 var: 100.00 rej: 0.004 anh: 0.000 pop: 1000
+#111 GEN | max: 75.608 min: -582.660 avg: -221.842 var: 100.00 rej: 0.376 anh: 0.000 pop: 1000
+#112 GEN | max: 75.608 min: -459.464 avg: -198.370 var: 100.00 rej: 0.564 anh: 0.000 pop: 1000
+#113 GEN | max: 75.608 min: -396.928 avg: -187.418 var: 100.00 rej: 0.640 anh: 0.000 pop: 1000
+#114 GEN | max: 75.608 min: -360.660 avg: -178.197 var: 100.00 rej: 0.744 anh: 0.000 pop: 1000
+#115 GEN | max: 75.608 min: -341.464 avg: -172.926 var: 100.00 rej: 0.784 anh: 0.000 pop: 1000
+#116 GEN | max: 75.608 min: -310.196 avg: -166.806 var: 100.00 rej: 0.764 anh: 0.000 pop: 1000
+#117 GEN | max: 75.608 min: -298.464 avg: -163.007 var: 100.00 rej: 0.868 anh: 0.000 pop: 1000
+#118 GEN | max: 75.608 min: -290.464 avg: -160.260 var: 100.00 rej: 0.868 anh: 0.000 pop: 1000
+#119 GEN | max: 75.608 min: -273.464 avg: -156.802 var: 100.00 rej: 0.856 anh: 0.000 pop: 1000
+#120 GEN | max: 75.608 min: -263.641 avg: -154.184 var: 100.00 rej: 0.880 anh: 0.000 pop: 1000
+#121 GEN | max: 75.608 min: -252.928 avg: -150.935 var: 100.00 rej: 0.872 anh: 0.000 pop: 1000
+#122 GEN | max: 75.608 min: -246.660 avg: -149.667 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#123 GEN | max: 75.608 min: -246.660 avg: -148.064 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#124 GEN | max: 75.608 min: -246.660 avg: -146.432 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#125 GEN | max: 75.608 min: -246.660 avg: -145.075 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#126 GEN | max: 75.608 min: -246.660 avg: -143.151 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#127 GEN | max: 75.608 min: -246.660 avg: -142.017 var: 100.00 rej: 0.940 anh: 0.000 pop: 1000
+#128 GEN | max: 75.608 min: -246.660 avg: -139.799 var: 100.00 rej: 0.884 anh: 0.000 pop: 1000
+#129 GEN | max: 75.608 min: -246.660 avg: -137.754 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#130 GEN | max: 75.608 min: -246.660 avg: -136.625 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#131 GEN | max: 75.608 min: -246.660 avg: -135.119 var: 100.00 rej: 0.928 anh: 0.000 pop: 1000
+#132 GEN | max: 75.608 min: -246.660 avg: -133.755 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#133 GEN | max: 75.608 min: -246.660 avg: -132.425 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#134 GEN | max: 75.608 min: -2547.196 avg: -562.463 var: 100.00 rej: 0.916 anh: 0.323 pop: 1000
+#135 GEN | max: 75.608 min: -1243.785 avg: -285.727 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#136 GEN | max: 75.608 min: -551.464 avg: -203.673 var: 100.00 rej: 0.332 anh: 0.000 pop: 1000
+#137 GEN | max: 75.608 min: -453.928 avg: -182.970 var: 100.00 rej: 0.552 anh: 0.000 pop: 1000
+#138 GEN | max: 75.608 min: -395.196 avg: -170.131 var: 100.00 rej: 0.684 anh: 0.000 pop: 1000
+#139 GEN | max: 75.608 min: -359.732 avg: -162.035 var: 100.00 rej: 0.740 anh: 0.000 pop: 1000
+#140 GEN | max: 75.608 min: -338.196 avg: -156.403 var: 100.00 rej: 0.780 anh: 0.000 pop: 1000
+#141 GEN | max: 75.608 min: -308.660 avg: -151.382 var: 100.00 rej: 0.796 anh: 0.000 pop: 1000
+#142 GEN | max: 75.608 min: -287.517 avg: -146.215 var: 100.00 rej: 0.800 anh: 0.000 pop: 1000
+#143 GEN | max: 75.608 min: -275.641 avg: -142.896 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#144 GEN | max: 75.608 min: -266.928 avg: -139.511 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#145 GEN | max: 75.608 min: -257.928 avg: -137.000 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#146 GEN | max: 75.608 min: -250.196 avg: -134.069 var: 100.00 rej: 0.884 anh: 0.000 pop: 1000
+#147 GEN | max: 75.608 min: -244.321 avg: -131.567 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#148 GEN | max: 75.608 min: -232.053 avg: -129.063 var: 100.00 rej: 0.896 anh: 0.000 pop: 1000
+#149 GEN | max: 75.608 min: -222.464 avg: -127.501 var: 100.00 rej: 0.944 anh: 0.000 pop: 1000
+#150 GEN | max: 75.608 min: -217.196 avg: -125.889 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#151 GEN | max: 75.608 min: -211.464 avg: -124.486 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#152 GEN | max: 75.608 min: -209.660 avg: -123.416 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#153 GEN | max: 75.608 min: -209.660 avg: -122.356 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#154 GEN | max: 75.608 min: -209.660 avg: -121.180 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#155 GEN | max: 75.608 min: -209.660 avg: -119.506 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#156 GEN | max: 75.608 min: -2706.928 avg: -594.152 var: 100.00 rej: 0.936 anh: 0.352 pop: 1000
+#157 GEN | max: 75.608 min: -1288.321 avg: -302.525 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#158 GEN | max: 75.608 min: -608.196 avg: -204.767 var: 100.00 rej: 0.312 anh: 0.000 pop: 1000
+#159 GEN | max: 75.608 min: -460.660 avg: -181.112 var: 100.00 rej: 0.544 anh: 0.000 pop: 1000
+#160 GEN | max: 75.608 min: -399.196 avg: -166.613 var: 100.00 rej: 0.628 anh: 0.000 pop: 1000
+#161 GEN | max: 75.608 min: -362.196 avg: -159.571 var: 100.00 rej: 0.756 anh: 0.000 pop: 1000
+#162 GEN | max: 75.608 min: -337.196 avg: -153.013 var: 100.00 rej: 0.748 anh: 0.000 pop: 1000
+#163 GEN | max: 75.608 min: -314.928 avg: -148.398 var: 100.00 rej: 0.800 anh: 0.000 pop: 1000
+#164 GEN | max: 75.608 min: -302.588 avg: -145.020 var: 100.00 rej: 0.816 anh: 0.000 pop: 1000
+#165 GEN | max: 75.608 min: -289.660 avg: -141.906 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#166 GEN | max: 75.608 min: -281.053 avg: -140.437 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#167 GEN | max: 75.608 min: -270.785 avg: -137.962 var: 100.00 rej: 0.868 anh: 0.000 pop: 1000
+#168 GEN | max: 75.608 min: -262.928 avg: -135.864 var: 100.00 rej: 0.900 anh: 0.000 pop: 1000
+#169 GEN | max: 75.608 min: -254.124 avg: -132.494 var: 100.00 rej: 0.856 anh: 0.000 pop: 1000
+#170 GEN | max: 75.608 min: -245.249 avg: -130.132 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#171 GEN | max: 75.608 min: -238.928 avg: -128.155 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#172 GEN | max: 75.608 min: -230.464 avg: -126.213 var: 100.00 rej: 0.900 anh: 0.000 pop: 1000
+#173 GEN | max: 75.608 min: -221.981 avg: -124.581 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#174 GEN | max: 75.608 min: -219.196 avg: -123.592 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#175 GEN | max: 75.608 min: -215.464 avg: -121.782 var: 100.00 rej: 0.900 anh: 0.000 pop: 1000
+#176 GEN | max: 75.608 min: -211.660 avg: -120.319 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#177 GEN | max: 75.608 min: -207.464 avg: -118.059 var: 100.00 rej: 0.884 anh: 0.000 pop: 1000
+#178 GEN | max: 75.608 min: -203.392 avg: -116.381 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#179 GEN | max: 75.608 min: -200.928 avg: -115.724 var: 100.00 rej: 0.952 anh: 0.000 pop: 1000
+#180 GEN | max: 75.608 min: -196.660 avg: -114.329 var: 100.00 rej: 0.928 anh: 0.000 pop: 1000
+#181 GEN | max: 75.608 min: -194.053 avg: -113.687 var: 100.00 rej: 0.960 anh: 0.000 pop: 1000
+#182 GEN | max: 75.608 min: -2669.464 avg: -517.215 var: 100.00 rej: 0.932 anh: 0.298 pop: 1000
+#183 GEN | max: 75.608 min: -1154.588 avg: -240.088 var: 100.00 rej: 0.004 anh: 0.000 pop: 1000
+#184 GEN | max: 75.608 min: -533.928 avg: -177.421 var: 100.00 rej: 0.420 anh: 0.000 pop: 1000
+#185 GEN | max: 75.608 min: -438.660 avg: -160.024 var: 100.00 rej: 0.624 anh: 0.000 pop: 1000
+#186 GEN | max: 75.608 min: -368.713 avg: -150.217 var: 100.00 rej: 0.732 anh: 0.000 pop: 1000
+#187 GEN | max: 75.608 min: -342.464 avg: -143.792 var: 100.00 rej: 0.780 anh: 0.000 pop: 1000
+#188 GEN | max: 75.608 min: -313.928 avg: -139.288 var: 100.00 rej: 0.816 anh: 0.000 pop: 1000
+#189 GEN | max: 75.608 min: -296.464 avg: -134.971 var: 100.00 rej: 0.828 anh: 0.000 pop: 1000
+#190 GEN | max: 75.608 min: -284.785 avg: -132.612 var: 100.00 rej: 0.868 anh: 0.000 pop: 1000
+#191 GEN | max: 75.608 min: -271.928 avg: -130.228 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#192 GEN | max: 75.608 min: -261.196 avg: -127.211 var: 100.00 rej: 0.864 anh: 0.000 pop: 1000
+#193 GEN | max: 75.608 min: -252.196 avg: -124.174 var: 100.00 rej: 0.860 anh: 0.000 pop: 1000
+#194 GEN | max: 75.608 min: -244.660 avg: -121.458 var: 100.00 rej: 0.884 anh: 0.000 pop: 1000
+#195 GEN | max: 75.608 min: -232.464 avg: -119.589 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#196 GEN | max: 75.608 min: -221.928 avg: -118.253 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#197 GEN | max: 75.608 min: -212.928 avg: -116.253 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#198 GEN | max: 75.608 min: -207.928 avg: -114.214 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#199 GEN | max: 75.608 min: -202.464 avg: -113.163 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#200 GEN | max: 75.608 min: -197.464 avg: -111.822 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#201 GEN | max: 75.608 min: -187.928 avg: -109.864 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#202 GEN | max: 75.608 min: -180.785 avg: -108.921 var: 100.00 rej: 0.940 anh: 0.000 pop: 1000
+#203 GEN | max: 75.608 min: -178.321 avg: -107.800 var: 100.00 rej: 0.944 anh: 0.000 pop: 1000
+#204 GEN | max: 75.608 min: -2585.928 avg: -553.170 var: 100.00 rej: 0.964 anh: 0.330 pop: 1000
+#205 GEN | max: 75.608 min: -1218.392 avg: -266.385 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#206 GEN | max: 75.608 min: -561.660 avg: -186.533 var: 100.00 rej: 0.352 anh: 0.000 pop: 1000
+#207 GEN | max: 75.608 min: -445.732 avg: -164.916 var: 100.00 rej: 0.548 anh: 0.000 pop: 1000
+#208 GEN | max: 75.608 min: -376.464 avg: -151.273 var: 100.00 rej: 0.628 anh: 0.000 pop: 1000
+#209 GEN | max: 75.608 min: -339.464 avg: -142.608 var: 100.00 rej: 0.704 anh: 0.000 pop: 1000
+#210 GEN | max: 75.608 min: -316.464 avg: -137.273 var: 100.00 rej: 0.808 anh: 0.000 pop: 1000
+#211 GEN | max: 75.608 min: -305.517 avg: -134.432 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#212 GEN | max: 75.608 min: -293.196 avg: -130.096 var: 100.00 rej: 0.812 anh: 0.000 pop: 1000
+#213 GEN | max: 75.608 min: -276.053 avg: -126.123 var: 100.00 rej: 0.852 anh: 0.000 pop: 1000
+#214 GEN | max: 75.608 min: -263.196 avg: -122.591 var: 100.00 rej: 0.852 anh: 0.000 pop: 1000
+#215 GEN | max: 75.608 min: -257.660 avg: -120.371 var: 100.00 rej: 0.892 anh: 0.000 pop: 1000
+#216 GEN | max: 75.608 min: -250.928 avg: -118.096 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#217 GEN | max: 75.608 min: -242.196 avg: -116.130 var: 100.00 rej: 0.888 anh: 0.000 pop: 1000
+#218 GEN | max: 75.608 min: -233.196 avg: -114.499 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#219 GEN | max: 75.608 min: -222.464 avg: -111.697 var: 100.00 rej: 0.864 anh: 0.000 pop: 1000
+#220 GEN | max: 75.608 min: -218.053 avg: -110.290 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#221 GEN | max: 75.608 min: -212.928 avg: -109.069 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#222 GEN | max: 75.608 min: -208.249 avg: -108.142 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#223 GEN | max: 75.608 min: -202.909 avg: -105.601 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#224 GEN | max: 75.608 min: -200.517 avg: -104.923 var: 100.00 rej: 0.960 anh: 0.000 pop: 1000
+#225 GEN | max: 75.608 min: -189.053 avg: -103.489 var: 100.00 rej: 0.896 anh: 0.000 pop: 1000
+#226 GEN | max: 75.608 min: -182.196 avg: -102.590 var: 100.00 rej: 0.956 anh: 0.000 pop: 1000
+#227 GEN | max: 75.608 min: -2665.464 avg: -557.689 var: 100.00 rej: 0.936 anh: 0.325 pop: 1000
+#228 GEN | max: 75.608 min: -1273.196 avg: -268.418 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#229 GEN | max: 75.608 min: -553.392 avg: -182.235 var: 100.00 rej: 0.340 anh: 0.000 pop: 1000
+#230 GEN | max: 75.608 min: -447.000 avg: -160.758 var: 100.00 rej: 0.548 anh: 0.000 pop: 1000
+#231 GEN | max: 75.608 min: -383.660 avg: -150.179 var: 100.00 rej: 0.704 anh: 0.000 pop: 1000
+#232 GEN | max: 75.608 min: -348.196 avg: -142.056 var: 100.00 rej: 0.752 anh: 0.000 pop: 1000
+#233 GEN | max: 75.608 min: -317.196 avg: -133.783 var: 100.00 rej: 0.748 anh: 0.000 pop: 1000
+#234 GEN | max: 75.608 min: -300.928 avg: -129.684 var: 100.00 rej: 0.816 anh: 0.000 pop: 1000
+#235 GEN | max: 75.608 min: -287.928 avg: -125.031 var: 100.00 rej: 0.824 anh: 0.000 pop: 1000
+#236 GEN | max: 75.608 min: -270.053 avg: -121.132 var: 100.00 rej: 0.844 anh: 0.000 pop: 1000
+#237 GEN | max: 75.608 min: -257.660 avg: -119.115 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#238 GEN | max: 75.608 min: -248.785 avg: -117.717 var: 100.00 rej: 0.896 anh: 0.000 pop: 1000
+#239 GEN | max: 75.608 min: -239.660 avg: -115.970 var: 100.00 rej: 0.892 anh: 0.000 pop: 1000
+#240 GEN | max: 75.608 min: -226.928 avg: -113.124 var: 100.00 rej: 0.856 anh: 0.000 pop: 1000
+#241 GEN | max: 75.608 min: -220.660 avg: -111.247 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#242 GEN | max: 75.608 min: -214.660 avg: -109.321 var: 100.00 rej: 0.900 anh: 0.000 pop: 1000
+#243 GEN | max: 75.608 min: -208.660 avg: -107.034 var: 100.00 rej: 0.900 anh: 0.000 pop: 1000
+#244 GEN | max: 75.608 min: -205.517 avg: -106.067 var: 100.00 rej: 0.944 anh: 0.000 pop: 1000
+#245 GEN | max: 75.608 min: -201.321 avg: -104.446 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#246 GEN | max: 75.608 min: -197.196 avg: -103.789 var: 100.00 rej: 0.944 anh: 0.000 pop: 1000
+#247 GEN | max: 75.608 min: -194.928 avg: -103.034 var: 100.00 rej: 0.960 anh: 0.000 pop: 1000
+#248 GEN | max: 75.608 min: -190.660 avg: -102.045 var: 100.00 rej: 0.944 anh: 0.000 pop: 1000
+#249 GEN | max: 75.608 min: -2362.321 avg: -521.261 var: 100.00 rej: 0.944 anh: 0.310 pop: 1000
+#250 GEN | max: 75.608 min: -1157.660 avg: -238.519 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#251 GEN | max: 75.608 min: -525.196 avg: -171.643 var: 100.00 rej: 0.376 anh: 0.000 pop: 1000
+#252 GEN | max: 75.608 min: -409.928 avg: -149.898 var: 100.00 rej: 0.568 anh: 0.000 pop: 1000
+#253 GEN | max: 75.608 min: -363.928 avg: -142.120 var: 100.00 rej: 0.736 anh: 0.000 pop: 1000
+#254 GEN | max: 75.608 min: -325.196 avg: -133.539 var: 100.00 rej: 0.760 anh: 0.000 pop: 1000
+#255 GEN | max: 75.804 min: -303.392 avg: -129.304 var: 100.00 rej: 0.820 anh: 0.000 pop: 1000
+#256 GEN | max: 75.804 min: -284.053 avg: -124.124 var: 100.00 rej: 0.812 anh: 0.000 pop: 1000
+#257 GEN | max: 75.804 min: -267.660 avg: -120.657 var: 100.00 rej: 0.856 anh: 0.000 pop: 1000
+#258 GEN | max: 75.804 min: -258.196 avg: -117.517 var: 100.00 rej: 0.872 anh: 0.000 pop: 1000
+#259 GEN | max: 75.804 min: -249.928 avg: -114.630 var: 100.00 rej: 0.868 anh: 0.000 pop: 1000
+#260 GEN | max: 75.804 min: -239.928 avg: -112.416 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#261 GEN | max: 75.804 min: -233.928 avg: -110.975 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#262 GEN | max: 75.804 min: -225.196 avg: -109.554 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#263 GEN | max: 75.804 min: -218.928 avg: -108.362 var: 100.00 rej: 0.928 anh: 0.000 pop: 1000
+#264 GEN | max: 75.804 min: -214.196 avg: -107.061 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#265 GEN | max: 75.804 min: -208.928 avg: -105.568 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#266 GEN | max: 75.804 min: -205.928 avg: -104.584 var: 100.00 rej: 0.944 anh: 0.000 pop: 1000
+#267 GEN | max: 75.804 min: -201.464 avg: -102.867 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#268 GEN | max: 75.804 min: -196.321 avg: -101.434 var: 100.00 rej: 0.928 anh: 0.000 pop: 1000
+#269 GEN | max: 75.804 min: -2634.196 avg: -514.742 var: 100.00 rej: 0.948 anh: 0.307 pop: 1000
+#270 GEN | max: 75.804 min: -1179.105 avg: -240.546 var: 100.00 rej: 0.004 anh: 0.000 pop: 1000
+#271 GEN | max: 75.804 min: -520.928 avg: -169.315 var: 100.00 rej: 0.384 anh: 0.000 pop: 1000
+#272 GEN | max: 75.804 min: -417.464 avg: -154.210 var: 100.00 rej: 0.664 anh: 0.000 pop: 1000
+#273 GEN | max: 75.804 min: -365.732 avg: -143.425 var: 100.00 rej: 0.688 anh: 0.000 pop: 1000
+#274 GEN | max: 75.804 min: -333.928 avg: -136.034 var: 100.00 rej: 0.764 anh: 0.000 pop: 1000
+#275 GEN | max: 75.804 min: -317.196 avg: -131.747 var: 100.00 rej: 0.848 anh: 0.000 pop: 1000
+#276 GEN | max: 75.804 min: -304.464 avg: -127.576 var: 100.00 rej: 0.824 anh: 0.000 pop: 1000
+#277 GEN | max: 75.804 min: -285.785 avg: -121.842 var: 100.00 rej: 0.820 anh: 0.000 pop: 1000
+#278 GEN | max: 75.804 min: -270.928 avg: -119.341 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#279 GEN | max: 75.804 min: -257.928 avg: -116.323 var: 100.00 rej: 0.872 anh: 0.000 pop: 1000
+#280 GEN | max: 75.804 min: -250.196 avg: -113.482 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#281 GEN | max: 75.804 min: -242.928 avg: -111.782 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#282 GEN | max: 75.804 min: -230.053 avg: -109.255 var: 100.00 rej: 0.892 anh: 0.000 pop: 1000
+#283 GEN | max: 75.804 min: -220.928 avg: -107.013 var: 100.00 rej: 0.888 anh: 0.000 pop: 1000
+#284 GEN | max: 75.804 min: -212.928 avg: -105.527 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#285 GEN | max: 75.804 min: -207.660 avg: -103.997 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#286 GEN | max: 75.804 min: -202.053 avg: -102.630 var: 100.00 rej: 0.940 anh: 0.000 pop: 1000
+#287 GEN | max: 75.804 min: -198.124 avg: -101.280 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#288 GEN | max: 75.804 min: -195.928 avg: -100.720 var: 100.00 rej: 0.960 anh: 0.000 pop: 1000
+#289 GEN | max: 75.804 min: -191.660 avg: -99.295 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#290 GEN | max: 75.804 min: -2419.660 avg: -502.815 var: 100.00 rej: 0.928 anh: 0.306 pop: 1000
+#291 GEN | max: 75.804 min: -1122.732 avg: -237.982 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#292 GEN | max: 75.804 min: -551.196 avg: -172.436 var: 100.00 rej: 0.412 anh: 0.000 pop: 1000
+#293 GEN | max: 75.804 min: -434.732 avg: -153.011 var: 100.00 rej: 0.588 anh: 0.000 pop: 1000
+#294 GEN | max: 75.804 min: -373.928 avg: -140.293 var: 100.00 rej: 0.668 anh: 0.000 pop: 1000
+#295 GEN | max: 75.804 min: -346.785 avg: -133.702 var: 100.00 rej: 0.780 anh: 0.000 pop: 1000
+#296 GEN | max: 75.804 min: -325.928 avg: -129.747 var: 100.00 rej: 0.844 anh: 0.000 pop: 1000
+#297 GEN | max: 75.804 min: -303.785 avg: -125.265 var: 100.00 rej: 0.836 anh: 0.000 pop: 1000
+#298 GEN | max: 75.804 min: -286.053 avg: -119.917 var: 100.00 rej: 0.824 anh: 0.000 pop: 1000
+#299 GEN | max: 75.804 min: -272.928 avg: -116.604 var: 100.00 rej: 0.864 anh: 0.000 pop: 1000
+#300 GEN | max: 75.804 min: -259.928 avg: -113.175 var: 100.00 rej: 0.864 anh: 0.000 pop: 1000
+#301 GEN | max: 75.804 min: -249.660 avg: -111.241 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#302 GEN | max: 75.804 min: -238.124 avg: -108.552 var: 100.00 rej: 0.864 anh: 0.000 pop: 1000
+#303 GEN | max: 75.804 min: -227.732 avg: -106.661 var: 100.00 rej: 0.900 anh: 0.000 pop: 1000
+#304 GEN | max: 75.804 min: -221.732 avg: -105.663 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#305 GEN | max: 75.804 min: -213.196 avg: -103.512 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#306 GEN | max: 75.804 min: -208.660 avg: -101.988 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#307 GEN | max: 75.804 min: -205.928 avg: -101.397 var: 100.00 rej: 0.944 anh: 0.000 pop: 1000
+#308 GEN | max: 75.804 min: -199.928 avg: -99.438 var: 100.00 rej: 0.928 anh: 0.000 pop: 1000
+#309 GEN | max: 75.804 min: -194.660 avg: -98.426 var: 100.00 rej: 0.928 anh: 0.000 pop: 1000
+#310 GEN | max: 75.804 min: -191.196 avg: -97.098 var: 100.00 rej: 0.956 anh: 0.000 pop: 1000
+#311 GEN | max: 75.804 min: -182.928 avg: -95.920 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#312 GEN | max: 75.804 min: -2616.785 avg: -554.446 var: 100.00 rej: 0.956 anh: 0.329 pop: 1000
+#313 GEN | max: 75.804 min: -1248.497 avg: -259.957 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#314 GEN | max: 75.804 min: -571.928 avg: -178.610 var: 100.00 rej: 0.356 anh: 0.000 pop: 1000
+#315 GEN | max: 75.804 min: -450.517 avg: -158.554 var: 100.00 rej: 0.560 anh: 0.000 pop: 1000
+#316 GEN | max: 75.804 min: -386.785 avg: -145.427 var: 100.00 rej: 0.624 anh: 0.000 pop: 1000
+#317 GEN | max: 75.804 min: -350.196 avg: -137.346 var: 100.00 rej: 0.732 anh: 0.000 pop: 1000
+#318 GEN | max: 75.804 min: -320.196 avg: -131.159 var: 100.00 rej: 0.772 anh: 0.000 pop: 1000
+#319 GEN | max: 75.804 min: -304.392 avg: -127.056 var: 100.00 rej: 0.800 anh: 0.000 pop: 1000
+#320 GEN | max: 75.804 min: -290.464 avg: -122.343 var: 100.00 rej: 0.796 anh: 0.000 pop: 1000
+#321 GEN | max: 75.804 min: -272.000 avg: -118.113 var: 100.00 rej: 0.852 anh: 0.000 pop: 1000
+#322 GEN | max: 75.804 min: -261.517 avg: -114.561 var: 100.00 rej: 0.856 anh: 0.000 pop: 1000
+#323 GEN | max: 75.804 min: -252.928 avg: -112.314 var: 100.00 rej: 0.868 anh: 0.000 pop: 1000
+#324 GEN | max: 75.804 min: -247.053 avg: -110.019 var: 100.00 rej: 0.896 anh: 0.000 pop: 1000
+#325 GEN | max: 75.804 min: -233.196 avg: -106.777 var: 100.00 rej: 0.864 anh: 0.000 pop: 1000
+#326 GEN | max: 75.804 min: -227.464 avg: -105.264 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#327 GEN | max: 75.804 min: -221.196 avg: -103.612 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#328 GEN | max: 75.804 min: -215.660 avg: -102.278 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#329 GEN | max: 75.804 min: -209.732 avg: -99.983 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#330 GEN | max: 75.804 min: -205.928 avg: -98.784 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#331 GEN | max: 75.804 min: -199.732 avg: -96.604 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#332 GEN | max: 75.804 min: -194.464 avg: -95.660 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#333 GEN | max: 75.804 min: -186.517 avg: -94.477 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#334 GEN | max: 75.804 min: -177.464 avg: -93.203 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#335 GEN | max: 75.804 min: -2906.196 avg: -544.671 var: 100.00 rej: 0.944 anh: 0.325 pop: 1000
+#336 GEN | max: 75.804 min: -1231.641 avg: -257.910 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#337 GEN | max: 75.804 min: -540.464 avg: -173.883 var: 100.00 rej: 0.348 anh: 0.000 pop: 1000
+#338 GEN | max: 75.804 min: -443.196 avg: -155.306 var: 100.00 rej: 0.600 anh: 0.000 pop: 1000
+#339 GEN | max: 75.804 min: -388.196 avg: -142.096 var: 100.00 rej: 0.656 anh: 0.000 pop: 1000
+#340 GEN | max: 75.804 min: -345.928 avg: -133.140 var: 100.00 rej: 0.740 anh: 0.000 pop: 1000
+#341 GEN | max: 75.804 min: -319.928 avg: -127.545 var: 100.00 rej: 0.800 anh: 0.000 pop: 1000
+#342 GEN | max: 75.804 min: -300.053 avg: -121.027 var: 100.00 rej: 0.772 anh: 0.000 pop: 1000
+#343 GEN | max: 75.804 min: -285.732 avg: -117.566 var: 100.00 rej: 0.860 anh: 0.000 pop: 1000
+#344 GEN | max: 75.804 min: -263.928 avg: -113.532 var: 100.00 rej: 0.820 anh: 0.000 pop: 1000
+#345 GEN | max: 75.804 min: -253.660 avg: -110.718 var: 100.00 rej: 0.868 anh: 0.000 pop: 1000
+#346 GEN | max: 75.804 min: -247.392 avg: -108.660 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#347 GEN | max: 75.804 min: -236.196 avg: -107.159 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#348 GEN | max: 75.804 min: -224.196 avg: -104.938 var: 100.00 rej: 0.900 anh: 0.000 pop: 1000
+#349 GEN | max: 75.804 min: -220.660 avg: -103.304 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#350 GEN | max: 75.804 min: -214.249 avg: -102.163 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#351 GEN | max: 75.804 min: -211.464 avg: -100.617 var: 100.00 rej: 0.940 anh: 0.000 pop: 1000
+#352 GEN | max: 75.804 min: -207.053 avg: -99.691 var: 100.00 rej: 0.928 anh: 0.000 pop: 1000
+#353 GEN | max: 75.804 min: -204.641 avg: -98.888 var: 100.00 rej: 0.952 anh: 0.000 pop: 1000
+#354 GEN | max: 75.804 min: -200.928 avg: -97.652 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#355 GEN | max: 75.804 min: -2528.517 avg: -545.726 var: 100.00 rej: 0.932 anh: 0.334 pop: 1000
+#356 GEN | max: 75.804 min: -1215.392 avg: -268.767 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#357 GEN | max: 75.804 min: -578.909 avg: -184.438 var: 100.00 rej: 0.312 anh: 0.000 pop: 1000
+#358 GEN | max: 75.804 min: -451.928 avg: -160.700 var: 100.00 rej: 0.572 anh: 0.000 pop: 1000
+#359 GEN | max: 75.804 min: -389.588 avg: -146.150 var: 100.00 rej: 0.624 anh: 0.000 pop: 1000
+#360 GEN | max: 75.804 min: -352.928 avg: -138.427 var: 100.00 rej: 0.748 anh: 0.000 pop: 1000
+#361 GEN | max: 75.804 min: -320.321 avg: -132.352 var: 100.00 rej: 0.780 anh: 0.000 pop: 1000
+#362 GEN | max: 75.804 min: -302.928 avg: -127.290 var: 100.00 rej: 0.784 anh: 0.000 pop: 1000
+#363 GEN | max: 75.804 min: -291.928 avg: -124.403 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#364 GEN | max: 75.804 min: -275.196 avg: -121.444 var: 100.00 rej: 0.860 anh: 0.000 pop: 1000
+#365 GEN | max: 75.804 min: -263.660 avg: -118.016 var: 100.00 rej: 0.860 anh: 0.000 pop: 1000
+#366 GEN | max: 75.804 min: -256.392 avg: -114.946 var: 100.00 rej: 0.872 anh: 0.000 pop: 1000
+#367 GEN | max: 75.804 min: -251.464 avg: -113.673 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#368 GEN | max: 75.804 min: -244.196 avg: -110.292 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#369 GEN | max: 75.804 min: -233.392 avg: -109.245 var: 100.00 rej: 0.928 anh: 0.000 pop: 1000
+#370 GEN | max: 75.804 min: -223.196 avg: -107.336 var: 100.00 rej: 0.888 anh: 0.000 pop: 1000
+#371 GEN | max: 75.804 min: -217.928 avg: -104.732 var: 100.00 rej: 0.892 anh: 0.000 pop: 1000
+#372 GEN | max: 75.804 min: -212.928 avg: -103.487 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#373 GEN | max: 75.804 min: -207.660 avg: -101.364 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#374 GEN | max: 75.804 min: -206.196 avg: -100.255 var: 100.00 rej: 0.948 anh: 0.000 pop: 1000
+#375 GEN | max: 75.804 min: -200.196 avg: -98.253 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#376 GEN | max: 75.804 min: -196.928 avg: -97.197 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#377 GEN | max: 75.804 min: -191.660 avg: -95.828 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#378 GEN | max: 75.804 min: -2743.928 avg: -533.662 var: 100.00 rej: 0.948 anh: 0.324 pop: 1000
+#379 GEN | max: 75.804 min: -1184.517 avg: -253.104 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#380 GEN | max: 75.804 min: -545.928 avg: -172.930 var: 100.00 rej: 0.316 anh: 0.000 pop: 1000
+#381 GEN | max: 75.804 min: -437.928 avg: -151.071 var: 100.00 rej: 0.580 anh: 0.000 pop: 1000
+#382 GEN | max: 75.804 min: -385.196 avg: -140.559 var: 100.00 rej: 0.672 anh: 0.000 pop: 1000
+#383 GEN | max: 75.804 min: -342.928 avg: -131.575 var: 100.00 rej: 0.736 anh: 0.000 pop: 1000
+#384 GEN | max: 75.804 min: -307.928 avg: -125.136 var: 100.00 rej: 0.760 anh: 0.000 pop: 1000
+#385 GEN | max: 75.804 min: -288.464 avg: -120.350 var: 100.00 rej: 0.812 anh: 0.000 pop: 1000
+#386 GEN | max: 75.804 min: -271.053 avg: -118.143 var: 100.00 rej: 0.888 anh: 0.000 pop: 1000
+#387 GEN | max: 75.804 min: -261.928 avg: -114.865 var: 100.00 rej: 0.856 anh: 0.000 pop: 1000
+#388 GEN | max: 75.804 min: -255.053 avg: -111.572 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#389 GEN | max: 75.804 min: -246.981 avg: -108.818 var: 100.00 rej: 0.884 anh: 0.000 pop: 1000
+#390 GEN | max: 75.804 min: -239.660 avg: -107.247 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#391 GEN | max: 75.804 min: -231.928 avg: -105.412 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#392 GEN | max: 75.804 min: -221.732 avg: -103.002 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#393 GEN | max: 75.804 min: -212.196 avg: -100.865 var: 100.00 rej: 0.888 anh: 0.000 pop: 1000
+#394 GEN | max: 75.804 min: -208.785 avg: -99.651 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#395 GEN | max: 75.804 min: -204.928 avg: -97.980 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#396 GEN | max: 75.804 min: -199.124 avg: -96.571 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#397 GEN | max: 75.804 min: -194.928 avg: -95.252 var: 100.00 rej: 0.940 anh: 0.000 pop: 1000
+#398 GEN | max: 75.804 min: -191.196 avg: -94.139 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#399 GEN | max: 75.804 min: -184.732 avg: -92.367 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#400 GEN | max: 75.804 min: -2493.053 avg: -540.661 var: 100.00 rej: 0.952 anh: 0.332 pop: 1000
+#401 GEN | max: 75.804 min: -1216.981 avg: -254.492 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#402 GEN | max: 75.804 min: -563.928 avg: -176.220 var: 100.00 rej: 0.360 anh: 0.000 pop: 1000
+#403 GEN | max: 75.804 min: -436.785 avg: -150.331 var: 100.00 rej: 0.520 anh: 0.000 pop: 1000
+#404 GEN | max: 75.804 min: -384.928 avg: -141.146 var: 100.00 rej: 0.728 anh: 0.000 pop: 1000
+#405 GEN | max: 75.804 min: -350.660 avg: -133.081 var: 100.00 rej: 0.740 anh: 0.000 pop: 1000
+#406 GEN | max: 75.804 min: -329.464 avg: -126.632 var: 100.00 rej: 0.800 anh: 0.000 pop: 1000
+#407 GEN | max: 75.804 min: -306.196 avg: -121.074 var: 100.00 rej: 0.820 anh: 0.000 pop: 1000
+#408 GEN | max: 75.804 min: -288.785 avg: -116.766 var: 100.00 rej: 0.832 anh: 0.000 pop: 1000
+#409 GEN | max: 75.804 min: -265.321 avg: -112.695 var: 100.00 rej: 0.824 anh: 0.000 pop: 1000
+#410 GEN | max: 75.804 min: -252.732 avg: -109.951 var: 100.00 rej: 0.864 anh: 0.000 pop: 1000
+#411 GEN | max: 75.804 min: -244.660 avg: -107.454 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#412 GEN | max: 75.804 min: -236.196 avg: -105.616 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#413 GEN | max: 75.804 min: -226.464 avg: -103.519 var: 100.00 rej: 0.900 anh: 0.000 pop: 1000
+#414 GEN | max: 75.804 min: -217.196 avg: -101.519 var: 100.00 rej: 0.892 anh: 0.000 pop: 1000
+#415 GEN | max: 75.804 min: -211.928 avg: -99.668 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#416 GEN | max: 75.804 min: -207.660 avg: -98.309 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#417 GEN | max: 75.804 min: -204.928 avg: -97.329 var: 100.00 rej: 0.944 anh: 0.000 pop: 1000
+#418 GEN | max: 75.804 min: -200.928 avg: -95.592 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#419 GEN | max: 75.804 min: -195.732 avg: -93.878 var: 100.00 rej: 0.940 anh: 0.000 pop: 1000
+#420 GEN | max: 84.536 min: -187.053 avg: -92.295 var: 100.00 rej: 0.928 anh: 0.000 pop: 1000
+#421 GEN | max: 84.536 min: -181.249 avg: -90.959 var: 100.00 rej: 0.932 anh: 0.000 pop: 1000
+#422 GEN | max: 84.536 min: -2858.928 avg: -556.171 var: 100.00 rej: 0.924 anh: 0.336 pop: 1000
+#423 GEN | max: 84.536 min: -1235.928 avg: -268.778 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#424 GEN | max: 84.536 min: -581.732 avg: -179.025 var: 100.00 rej: 0.316 anh: 0.000 pop: 1000
+#425 GEN | max: 84.536 min: -459.053 avg: -155.604 var: 100.00 rej: 0.556 anh: 0.000 pop: 1000
+#426 GEN | max: 84.536 min: -388.928 avg: -141.539 var: 100.00 rej: 0.624 anh: 0.000 pop: 1000
+#427 GEN | max: 84.536 min: -347.392 avg: -132.225 var: 100.00 rej: 0.732 anh: 0.000 pop: 1000
+#428 GEN | max: 84.536 min: -325.732 avg: -126.843 var: 100.00 rej: 0.804 anh: 0.000 pop: 1000
+#429 GEN | max: 84.536 min: -302.660 avg: -121.411 var: 100.00 rej: 0.804 anh: 0.000 pop: 1000
+#430 GEN | max: 84.536 min: -283.249 avg: -117.929 var: 100.00 rej: 0.828 anh: 0.000 pop: 1000
+#431 GEN | max: 84.536 min: -266.732 avg: -113.298 var: 100.00 rej: 0.820 anh: 0.000 pop: 1000
+#432 GEN | max: 84.536 min: -258.660 avg: -110.865 var: 100.00 rej: 0.900 anh: 0.000 pop: 1000
+#433 GEN | max: 84.536 min: -249.732 avg: -109.150 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#434 GEN | max: 84.536 min: -241.660 avg: -106.567 var: 100.00 rej: 0.892 anh: 0.000 pop: 1000
+#435 GEN | max: 84.536 min: -228.392 avg: -104.618 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
+#436 GEN | max: 84.536 min: -219.392 avg: -103.472 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#437 GEN | max: 84.536 min: -215.517 avg: -101.996 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#438 GEN | max: 84.536 min: -210.196 avg: -100.244 var: 100.00 rej: 0.908 anh: 0.000 pop: 1000
+#439 GEN | max: 84.536 min: -207.928 avg: -99.203 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#440 GEN | max: 84.536 min: -204.464 avg: -97.842 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#441 GEN | max: 84.536 min: -199.928 avg: -96.283 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#442 GEN | max: 84.536 min: -193.392 avg: -94.566 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#443 GEN | max: 84.536 min: -185.517 avg: -92.498 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#444 GEN | max: 84.536 min: -179.105 avg: -91.620 var: 100.00 rej: 0.928 anh: 0.000 pop: 1000
+#445 GEN | max: 84.536 min: -2723.196 avg: -537.918 var: 100.00 rej: 0.924 anh: 0.323 pop: 1000
+#446 GEN | max: 84.536 min: -1229.660 avg: -250.806 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#447 GEN | max: 84.536 min: -557.464 avg: -172.007 var: 100.00 rej: 0.336 anh: 0.000 pop: 1000
+#448 GEN | max: 84.536 min: -437.928 avg: -151.691 var: 100.00 rej: 0.584 anh: 0.000 pop: 1000
+#449 GEN | max: 84.536 min: -391.392 avg: -141.335 var: 100.00 rej: 0.724 anh: 0.000 pop: 1000
+#450 GEN | max: 84.536 min: -352.660 avg: -134.243 var: 100.00 rej: 0.724 anh: 0.000 pop: 1000
+#451 GEN | max: 84.536 min: -321.928 avg: -127.909 var: 100.00 rej: 0.804 anh: 0.000 pop: 1000
+#452 GEN | max: 84.536 min: -307.196 avg: -123.975 var: 100.00 rej: 0.832 anh: 0.000 pop: 1000
+#453 GEN | max: 84.536 min: -296.928 avg: -120.487 var: 100.00 rej: 0.860 anh: 0.000 pop: 1000
+#454 GEN | max: 84.536 min: -282.660 avg: -117.396 var: 100.00 rej: 0.860 anh: 0.000 pop: 1000
+#455 GEN | max: 84.536 min: -265.660 avg: -113.428 var: 100.00 rej: 0.836 anh: 0.000 pop: 1000
+#456 GEN | max: 84.536 min: -255.660 avg: -110.045 var: 100.00 rej: 0.880 anh: 0.000 pop: 1000
+#457 GEN | max: 84.536 min: -249.928 avg: -107.764 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#458 GEN | max: 84.536 min: -241.392 avg: -105.629 var: 100.00 rej: 0.888 anh: 0.000 pop: 1000
+#459 GEN | max: 84.536 min: -224.928 avg: -102.811 var: 100.00 rej: 0.872 anh: 0.000 pop: 1000
+#460 GEN | max: 84.536 min: -219.928 avg: -101.658 var: 100.00 rej: 0.920 anh: 0.000 pop: 1000
+#461 GEN | max: 84.536 min: -213.732 avg: -100.112 var: 100.00 rej: 0.912 anh: 0.000 pop: 1000
+#462 GEN | max: 84.536 min: -209.464 avg: -98.952 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#463 GEN | max: 84.536 min: -204.660 avg: -97.617 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#464 GEN | max: 84.536 min: -197.464 avg: -96.249 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#465 GEN | max: 84.536 min: -194.660 avg: -95.135 var: 100.00 rej: 0.952 anh: 0.000 pop: 1000
+#466 GEN | max: 84.536 min: -189.249 avg: -93.831 var: 100.00 rej: 0.948 anh: 0.000 pop: 1000
+#467 GEN | max: 84.536 min: -2553.392 avg: -504.849 var: 100.00 rej: 0.960 anh: 0.305 pop: 1000
+#468 GEN | max: 84.536 min: -1121.249 avg: -230.053 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#469 GEN | max: 84.536 min: -541.660 avg: -168.443 var: 100.00 rej: 0.424 anh: 0.000 pop: 1000
+#470 GEN | max: 90.804 min: -433.928 avg: -150.177 var: 100.00 rej: 0.604 anh: 0.000 pop: 1000
+#471 GEN | max: 90.804 min: -382.928 avg: -140.467 var: 100.00 rej: 0.728 anh: 0.000 pop: 1000
+#472 GEN | max: 90.804 min: -345.464 avg: -132.008 var: 100.00 rej: 0.728 anh: 0.000 pop: 1000
+#473 GEN | max: 90.804 min: -322.660 avg: -126.161 var: 100.00 rej: 0.808 anh: 0.000 pop: 1000
+#474 GEN | max: 90.804 min: -305.660 avg: -121.833 var: 100.00 rej: 0.832 anh: 0.000 pop: 1000
+#475 GEN | max: 90.804 min: -287.660 avg: -117.191 var: 100.00 rej: 0.836 anh: 0.000 pop: 1000
+#476 GEN | max: 90.804 min: -267.464 avg: -112.980 var: 100.00 rej: 0.836 anh: 0.000 pop: 1000
+#477 GEN | max: 90.804 min: -258.928 avg: -110.068 var: 100.00 rej: 0.880 anh: 0.000 pop: 1000
+#478 GEN | max: 90.804 min: -251.196 avg: -107.335 var: 100.00 rej: 0.892 anh: 0.000 pop: 1000
+#479 GEN | max: 90.804 min: -235.928 avg: -103.921 var: 100.00 rej: 0.868 anh: 0.000 pop: 1000
+#480 GEN | max: 90.804 min: -221.196 avg: -101.081 var: 100.00 rej: 0.868 anh: 0.000 pop: 1000
+#481 GEN | max: 90.804 min: -213.000 avg: -99.390 var: 100.00 rej: 0.904 anh: 0.000 pop: 1000
+#482 GEN | max: 90.804 min: -207.785 avg: -97.815 var: 100.00 rej: 0.916 anh: 0.000 pop: 1000
+#483 GEN | max: 90.804 min: -200.732 avg: -95.835 var: 100.00 rej: 0.896 anh: 0.000 pop: 1000
+#484 GEN | max: 90.804 min: -194.660 avg: -94.260 var: 100.00 rej: 0.924 anh: 0.000 pop: 1000
+#485 GEN | max: 90.804 min: -189.053 avg: -93.224 var: 100.00 rej: 0.956 anh: 0.000 pop: 1000
+#486 GEN | max: 90.804 min: -184.732 avg: -92.420 var: 100.00 rej: 0.948 anh: 0.000 pop: 1000
+#487 GEN | max: 90.804 min: -177.660 avg: -90.935 var: 100.00 rej: 0.936 anh: 0.000 pop: 1000
+#488 GEN | max: 90.804 min: -175.928 avg: -90.449 var: 100.00 rej: 0.956 anh: 0.000 pop: 1000
+#489 GEN | max: 90.804 min: -2283.196 avg: -538.853 var: 100.00 rej: 0.932 anh: 0.338 pop: 1000
+#490 GEN | max: 90.804 min: -1207.177 avg: -264.053 var: 100.00 rej: 0.000 anh: 0.000 pop: 1000
+#491 GEN | max: 90.804 min: -562.660 avg: -177.241 var: 100.00 rej: 0.316 anh: 0.000 pop: 1000
+#492 GEN | max: 90.804 min: -452.196 avg: -156.135 var: 100.00 rej: 0.556 anh: 0.000 pop: 1000
+#493 GEN | max: 90.804 min: -404.196 avg: -144.000 var: 100.00 rej: 0.700 anh: 0.000 pop: 1000
+#494 GEN | max: 90.804 min: -355.196 avg: -136.102 var: 100.00 rej: 0.712 anh: 0.000 pop: 1000
+#495 GEN | max: 90.804 min: -333.196 avg: -128.642 var: 100.00 rej: 0.752 anh: 0.000 pop: 1000
+#496 GEN | max: 90.804 min: -312.196 avg: -123.785 var: 100.00 rej: 0.804 anh: 0.000 pop: 1000
+#497 GEN | max: 90.804 min: -301.464 avg: -119.583 var: 100.00 rej: 0.844 anh: 0.000 pop: 1000
+#498 GEN | max: 90.804 min: -284.464 avg: -115.911 var: 100.00 rej: 0.832 anh: 0.000 pop: 1000
+#499 GEN | max: 90.804 min: -265.928 avg: -112.715 var: 100.00 rej: 0.832 anh: 0.000 pop: 1000
+#500 GEN | max: 90.804 min: -256.124 avg: -109.732 var: 100.00 rej: 0.864 anh: 0.000 pop: 1000
+#501 GEN | max: 90.804 min: -248.196 avg: -106.734 var: 100.00 rej: 0.876 anh: 0.000 pop: 1000
++-------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|   Horário   |            Segunda             |             Terça              |             Quarta             |             Quinta             |             Sexta              |
++=============+================================+================================+================================+================================+================================+
+| 8h00-10h00  |                                |                                |                                |                                |                                |
++-------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+| 10h00-12h00 |                                | Fenômenos Eletromagnéticos -   | Ciência, Tecnologia, Sociedade | Fenômenos Eletromagnéticos -   |                                |
+|             |                                | IA Manuel                      | e Ambiente - IC Luciana        | IA Manuel                      |                                |
++-------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+| 13h30-15h30 |                                | Introdução à Engenharia de     | Teorias Administrativas - IA   | Laboratório de Eletrônica      | Laboratório de Sistemas        |
+|             |                                | Materiais - I Passador         | Iraci                          | Digital - IC Karina            | Computacionais: Circuitos      |
+|             |                                |                                |                                |                                | Digitais - I Tiago             |
++-------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+| 15h30-17h30 |                                |                                |                                | Introdução à Engenharia        |                                |
+|             |                                |                                |                                | Biomédica - I Martini          |                                |
++-------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+| 19h00-21h00 |                                |                                | Metodologia da Pesquisa e      |                                | Fenômenos do Contínuo          |
+|             |                                |                                | Comunicação Científica - N     |                                | Experimental - N Rossano       |
+|             |                                |                                | Presley                        |                                |                                |
++-------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+| 21h00-23h00 |                                |                                |                                |                                | Desenho Técnico Básico - N     |
+|             |                                |                                |                                |                                | Shida                          |
++-------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+--------------------------------+
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+|   Score    |                              Target                               |              Slot              |                Condition                 |        Detail        |
++============+===================================================================+================================+==========================================+======================+
+| 90.804     | Grade                                                             |                                |                                          | TOTAL                |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| -1.732     | None                                                              | ('Quarta', 3)                  | Janela Entre-Aulas                       | 1                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| -1.732     |                                                                   | ('Sexta', 1)                   | Janela Entre-Aulas                       | 1                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| -1.732     |                                                                   | ('Sexta', 3)                   | Janela Entre-Aulas                       | 1                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Quarta', 0)                  | Aluno prefere o horário                  | Vazio                |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Sexta', 0)                   | Aluno prefere o horário                  | Vazio                |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Quinta', 0)                  | Aluno prefere o horário                  | Vazio                |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Segunda', 0)                 | Aluno prefere o horário                  | Vazio                |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Terça', 0)                   | Aluno prefere o horário                  | Vazio                |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 19.804     |                                                                   |                                |                                          |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 2          | Fenômenos Eletromagnéticos - IA Manuel                            | ('Quinta', 1)                  | Termo presente                           | 4                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 2          |                                                                   | ('Terça', 1)                   | Termo presente                           | 4                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Quinta', 1)                  | Aluno prefere o horário                  |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Terça', 1)                   | Aluno prefere o horário                  |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 14         |                                                                   |                                |                                          |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 0          | Ciência, Tecnologia, Sociedade e Ambiente - IC Luciana            | ('Quarta', 1)                  | Dependencias futuras                     | 0                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 2          |                                                                   | ('Quarta', 1)                  | Termo passado                            | 2                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Quarta', 1)                  | Aluno prefere o horário                  |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 7          |                                                                   |                                |                                          |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 0          | Desenho Técnico Básico - N Shida                                  | ('Sexta', 5)                   | Dependencias futuras                     | 0                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 2          |                                                                   | ('Sexta', 5)                   | Termo passado                            | 2                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Sexta', 5)                   | Aluno prefere o horário                  |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 7          |                                                                   |                                |                                          |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 2          | Laboratório de Sistemas Computacionais: Circuitos Digitais - I    | ('Sexta', 2)                   | Termo presente                           | 4                    |
+|            | Tiago                                                             |                                |                                          |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Sexta', 2)                   | Aluno prefere o horário                  |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 7          |                                                                   |                                |                                          |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 1          | Fenômenos do Contínuo Experimental - N Rossano                    | ('Sexta', 4)                   | UC eletiva                               |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Sexta', 4)                   | Aluno prefere o horário                  |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 6          |                                                                   |                                |                                          |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 1          | Introdução à Engenharia Biomédica - I Martini                     | ('Quinta', 3)                  | UC eletiva                               |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Quinta', 3)                  | Aluno prefere o horário                  |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 6          |                                                                   |                                |                                          |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 1          | Introdução à Engenharia de Materiais - I Passador                 | ('Terça', 2)                   | UC eletiva                               |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Terça', 2)                   | Aluno prefere o horário                  |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 6          |                                                                   |                                |                                          |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 0          | Laboratório de Eletrônica Digital - IC Karina                     | ('Quinta', 2)                  | Dependencias futuras                     | 0                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 1          |                                                                   | ('Quinta', 2)                  | Termo futuro                             | 6                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Quinta', 2)                  | Aluno prefere o horário                  |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 6          |                                                                   |                                |                                          |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 1          | Metodologia da Pesquisa e Comunicação Científica - N Presley      | ('Quarta', 4)                  | UC eletiva                               |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Quarta', 4)                  | Aluno prefere o horário                  |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 6          |                                                                   |                                |                                          |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 0          | Teorias Administrativas - IA Iraci                                | ('Quarta', 2)                  | Dependencias futuras                     | 0                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 1          |                                                                   | ('Quarta', 2)                  | Termo futuro                             | 8                    |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+| 5          |                                                                   | ('Quarta', 2)                  | Aluno prefere o horário                  |                      |
++------------+-------------------------------------------------------------------+--------------------------------+------------------------------------------+----------------------+
+
+2018-06-25 02:49:27.649473
+
+Process finished with exit code 0

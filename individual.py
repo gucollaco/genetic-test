@@ -33,7 +33,7 @@ class Individual:
         for weekday in CROMOSSOME_KEYS:
             self.cromossomes[weekday] = Cromossome(self, weekday)
 
-        self.chance_of_mutating = 0.85
+        self.chance_of_mutating = 0.3
 
         self._fitness = None
         self._genome = None
@@ -184,27 +184,18 @@ class Individual:
     # todo Melhorar mating
     def mate(self, other, optimization=None, generation=None):
         child = Individual(generation=generation)
-        child2 = Individual(generation=generation)
 
-        tip = random.sample(range(NUMBER_OF_GENES), 1)[0]
         for k in CROMOSSOME_KEYS:
-            profase = self.cromossomes[k].crossover((child, child2), other.cromossomes[k], tip=tip)
+            novo_cromossomo = self.cromossomes[k].crossover(child, other.cromossomes[k] )
 
-            child.cromossomes[k] = profase[0]
-            child2.cromossomes[k] = profase[1]
+            child.cromossomes[k] = novo_cromossomo
+
+        child.mutate()
 
         if optimization is not None:
             optimization(child)
-            optimization(child2)
 
-        # media = (self.fitness() + other.fitness())/2
-        # if child.fitness() < media:
-        #     print('   BAD SON | {:.3f} {:.3f}'.format(child.fitness(), media))
-        #
-        # if child2.fitness() <= media:
-        #     print('   BAD SON | {:.3f} {:.3f}'.format(child2.fitness(), media))
-
-        return child, child2
+        return [child]
 
     @property
     def index(self):

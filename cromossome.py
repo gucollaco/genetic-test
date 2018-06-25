@@ -46,8 +46,25 @@ class Cromossome:
         for i in range(NUMBER_OF_GENES):
             self.genes[i] = Gene(self, gene_type=(self.weekday, i), random=True)
 
+    def crossover(self, children, other, tip=None):
+        return self.uniform_crossover(children, other)
+
+    def uniform_crossover(self, child, other):
+        c = Cromossome(child, self.weekday)
+
+        for i in range(NUMBER_OF_GENES):
+            if self.genes[i] == other.genes[i]:
+                c.genes[i] = self.genes[i].clone(c)
+            else:
+                if random.uniform(0, 1) < 0.5:
+                    c.genes[i] = self.genes[i].clone(c)
+                else:
+                    c.genes[i] = other.genes[i].clone(c)
+
+        return c
+
     # todo Escolher: tip igual pra todos os cromossomos ou diferente pra cada um
-    def crossover(self, children, other, tip):
+    def single_point_crossover(self, children, other, tip):
         c = Cromossome(children[0], self.weekday)
         c2 = Cromossome(children[1], self.weekday)
 

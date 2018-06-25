@@ -16,7 +16,7 @@ from auxiliar.timing import timing_open, timing_close
 # VARIATION UNDER DOMESTICATION
 def optimize(individual: Individual):
     not_so_random = []
-    chance_of_tabu = 0.1
+    chance_of_tabu = 0.2
 
     clone = Memory(individual)
     for c in individual.cromossomes.values():
@@ -57,15 +57,15 @@ def populate(size):
 def evolve(population):
     population.generation += 1
 
-    # TO RIGHT THE WRONGS OF MANY
-    offspring = population.breed(optimization=optimize)
-
     # VARIATION UNDER NATURE
-    mutate(offspring)
+    offspring = population.breed(optimization=optimize)
 
     # NATURE UNDER CONTRAINT AND VEXED
     population.merge(offspring)
     population.select()
+
+    # ENDLESS FORMS MOST BEAUTIFUL
+    population.annihilate()
 
 
 print('\n================================')
@@ -75,29 +75,32 @@ print('================================', end='\n\n')
 ConditionMap().load(file.load('fitness_conditions.json'))
 
 database = Bridge()
-database.sync('dsalexandre', 'HelenOfTroy1', 'ECOMP')
+database.sync('dsalexandre', None, 'ECOMP')
 database.student.simulate_term(3)
 
 Individual.ref_database(database)
 
 random.seed(1)
 
+
+i = Individual(genes=[107, 189, 85, 76, 147, 109, 24])
+express(i)
+express(i, GENOTYPE)
+
 print('\n================================')
 print('INITIATE SIMULATION', end='\n   ')
 print(datetime.now())
 print('================================', end='\n\n')
 
-pop = populate(400)
+pop = populate(1000)
 
 # express(pop[0])
 # express(pop[0], GENOTYPE)
-pop.analyse()
+# pop.analyse()
 evolve(pop)  # first generation
 pop.analyse()
 
-for _ in range(1, 200):
-    if _ == 50:
-        pass
+for _ in range(1, 500):
     evolve(pop)
     pop.analyse()
 

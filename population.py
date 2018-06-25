@@ -17,9 +17,16 @@ class Population(object):
         self.items = list()
 
         self.chance_of_breading = breading
+        self.chance_of_annihilation = 0.3
 
+        self.rejection_history_size = 10
+        self.rejection_limit = 0.92
+
+        self.annihilation_ratio = 0.0
         self.offspring_rejection_ratio = 0.0
         self.elders_rejection_ratio = 0.0
+
+        self.offspring_rejection_history = []
 
         self.generation = 1
 
@@ -43,9 +50,11 @@ class Population(object):
     def merge(self, other):
         if type(other) is list:
             for individual in other:
+                individual.reset()
                 self.append(individual)
         elif type(other) is Population:
             for individual in other.items:
+                individual.reset()
                 self.append(individual)
 
     @property
@@ -64,8 +73,10 @@ class Population(object):
     def pick(self) -> tuple:
         mom, dad = None, None
 
-        sum_fitness = sum([i.fitness() for i in self.items])
-        wheel = list(self.ordered)
+        sample = list(self.ordered)[:int(self.initial_size/2)]
+
+        sum_fitness = sum([i.fitness() for i in sample])
+        wheel = sample
 
         chance_of_picking = random.uniform(0, 1)
         acumulated_fitness = 0.0
@@ -136,9 +147,37 @@ class Population(object):
         if self.generation % 1 == 0:
             print('#{} GEN'.format(self.generation), end=' | ')
             fts = [i.fitness() for i in self.items]
-            print('max: {:.3f}  min: {:.3f}  avg: {:.3f} var: {:.2f} rej: {:.3f} eld: {:.3f} pop: {}'.format(max(fts), min(fts), numpy.mean(fts), self.variability() * 100, self.offspring_rejection_ratio, self.elders_rejection_ratio, len(self)))
+            print('max: {:.3f} min: {:.3f} avg: {:.3f} var: {:.2f} rej: {:.3f} anh: {:.3f} pop: {}'.format(max(fts), min(fts), numpy.mean(fts), self.variability() * 100, self.offspring_rejection_ratio, self.annihilation_ratio, len(self)))
             # print(sorted(fts))
 
     def variability(self) -> float:
         uniques = set(self.items)
         return len(uniques)/len(self.items)
+
+    def annihilate(self):
+        if len(self.offspring_rejection_history) == self.rejection_history_size:
+            self.offspring_rejection_history.pop(0)
+        self.offspring_rejection_history.append(self.offspring_rejection_ratio)
+
+        avg = sum(self.offspring_rejection_history)/self.rejection_history_size
+
+        if avg > self.rejection_limit:
+            chosen = (1 - self.chance_of_annihilation) * 0.1
+
+            pool = list(self.ordered)[int(len(self) * chosen):int(len(self) * chosen * -1)]
+            worse = list(self.ordered)[int(len(self) * chosen * -1):]
+
+            pool = [i for i in pool if random.uniform(0, 1) < self.chance_of_annihilation]
+            pool += worse
+
+            hole_size = len(pool)
+
+            self.annihilation_ratio = len(pool)/len(self)
+
+            for individual in pool:
+                self.items.remove(individual)
+            for _ in range(hole_size):
+                i = Individual(random=True, generation=self.generation)
+                self.append(i)
+        else:
+            self.annihilation_ratio = 0.0

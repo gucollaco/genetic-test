@@ -23,7 +23,7 @@ class Gene:
         self._evaluator = None
 
         if random:
-            self.mutate(populate=False)
+            self.mutate()
 
     def __repr__(self):
         if self.data is None:
@@ -143,17 +143,13 @@ class Gene:
             return [a for a in Gene.ref_database.aulas.values() if any(self.gene_type == h for h in a.horarios)]
 
     # todo Melhorar mutacao
-    def mutate(self, populate=False, recalculate=True):
-        empty_proportion = 0.33
-        if populate:
-            empty_proportion = 2.75
+    def mutate(self, recalculate=True):
+        if random.uniform(0, 1) < 0.5:
+            self.set_data(None, recalculate=recalculate)
+        else:
+            pool = self.pool()
 
-        # cria a variedade de genes aceitaveis
-        known = self.pool()
-        pool = [None] * int(len(known) * empty_proportion)
-        pool += known
-
-        self.set_data(random.sample(pool, 1)[0], recalculate=recalculate)
+            self.set_data(random.sample(pool, 1)[0], recalculate=recalculate)
 
     def clone(self, cromossome):
         g = Gene(cromossome, self.gene_type)
